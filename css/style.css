@@ -34,7 +34,7 @@ html, body {
 .main-grid-bg {
   width: 100%;
   height: 500px;
-  background-image: url("../../assets/main-img.png");
+  background-image: url("../assets/main-img.PNG");
   background-position: top right;
   background-size: contain;
   background-repeat: no-repeat;
