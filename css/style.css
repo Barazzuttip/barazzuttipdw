@@ -342,7 +342,7 @@ html, body {
   background-image: url("https://www.fundacionsantillana.com/wp-content/uploads/2022/08/banner-contato-newsletter.jpg.webp");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   /*background-color: #323232;*/
   height: 700px;
   display: flex;
@@ -369,6 +369,7 @@ html, body {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr 1fr;
+  margin-bottom: 20px;
 }
 .grid-cont-bz .grid1-1 {
   display: flex;
