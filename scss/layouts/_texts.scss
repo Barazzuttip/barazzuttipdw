@@ -1,0 +1,50 @@
+.h1-text {
+    color: #FEACC6;
+    font-family: 'Jura';
+    font-size: 1.5rem;
+    text-align: center;
+    /*text-shadow:
+        1px 0 0 #ec6892,
+        -1px 0 0 #FFE4ED;*/
+}
+.h2-main {
+    font-size: 1.5rem;
+    font-family: 'kodchasan-bold';
+    width: 100%;
+    color: #FEACC6;
+    text-shadow:
+        2px 2px 3px #000000;
+ }
+.main-text1 {
+    display: flex;
+    width: 75%;
+    margin: 5px;
+    color: #FFE4ED;
+}
+.main-text2{
+    width: 75%;
+    color: #FFE4ED;
+}
+.highlight {
+    color: #FFE4ED;
+}
+.link-dec {
+    color: #FFE4ED;
+    font-family: 'kodchasan-medium';
+    font-size: 16px;
+    font-weight: lighter;
+    text-decoration: none;
+}
+.title-h4 {
+    color: #FFE4ED;
+    font-size: 20px;
+    font-family: 'kodchasan-bold';
+    margin-top: 15px;
+}
+.just-text {
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    color: #FFE4ED;
+    margin: 5px;
+}

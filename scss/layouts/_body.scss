@@ -1,0 +1,83 @@
+@import "../layouts/texts";
+
+.bz {
+    padding: 20px;
+
+    h2 {
+        text-align: center;
+    }
+}
+
+.valores-div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 50px;
+    .cards-section-title {
+        margin-bottom: 20px;
+        .cst-name {
+            @extend .h2-main;
+            width: 100%;
+        }
+    }
+}
+
+.valores-style {
+    display: flex;
+}
+
+.bz-layout {
+    display: flex;
+    justify-content: end;
+    .bz-info {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bz-img-cont {
+        display: flex;
+        justify-content: start;
+        width: 50%;
+        .bz-img {
+            width: 70%;
+        }
+    }
+
+}
+.certif {
+    margin: 15px;
+    border: 5px double #FEACC6;
+    border-radius: 25px;
+    width: 180%; 
+    height: 79%;
+}
+.portaf {
+    display: flex;
+}
+
+.faq {
+    background-color: #323232;
+    padding: 100px;
+    .faq-acc {
+       margin: 30px;
+       border-radius: 10px;
+       box-shadow: 
+       5px 5px #FEACC6,
+       -5px -5px #FFE4ED;
+    }
+}
+
+.contacto {
+    background-image: url('https://www.fundacionsantillana.com/wp-content/uploads/2022/08/banner-contato-newsletter.jpg.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /*background-color: #323232;*/
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}

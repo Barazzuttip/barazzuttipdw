@@ -1,0 +1,17 @@
+.main-btn {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'kodchasan-light';
+    display: flex;
+    margin: 10px;
+    padding: 5px;
+    justify-content: center;
+    width: 15%;
+    text-align: center;
+    background-color: #151515;
+    box-shadow:
+        4px 4px 3px #000000;
+    border-radius: 5px;
+    color: #FEACC6;
+    /*@extend formato de texto para el boton*/
+}
