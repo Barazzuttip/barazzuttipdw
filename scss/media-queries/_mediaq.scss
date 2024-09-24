@@ -1,0 +1,232 @@
+@media only screen and (min-width:500px) and (max-width: 1024px) { 
+    /*******pagina de inicio*******/
+    /*header*/
+    .header-format {
+        width: 100%;
+        justify-content: space-around;
+        .header-izq {
+        }
+    }
+    .h1-text {
+        display: none;
+    }
+    .nav-visual {
+        display: none;
+    }
+    .drop-mq{
+        display: flex;
+    }
+    
+    /*articulo ppal*/
+    .h2-main {
+        width: 100%;
+    }
+    .main-text1 {
+        width: 100%;
+    }
+    .main-text2 {
+        width: 100%;
+    }
+    .main-grid-div {
+        grid-column: 1/ span 2;
+        grid-row: 1;
+        justify-content: start !important;
+    }
+    .main-grid-bg {
+        background-position: bottom;
+        background-size: 50%;
+    }
+
+    /*valores*/
+    .valores-style {
+       justify-content: start;
+       align-items: start;
+       width: 75%;
+    }
+    .cards-style {
+        justify-content: start;
+        align-items: center;
+        width: 50%;
+    }
+    .card-txt {
+        display: none;
+    }
+
+
+    /*footer*/
+    .footer-format {
+        justify-content: space-around;
+    
+        .footer-izq {
+            display: none;
+        }
+        .footer-logo {
+            width: 20%;
+            height: 20%;
+        }
+    }
+    /************/
+    /*barazzutti*/
+    /************/
+    .bz-img {
+        display: none;
+    }
+    .bz-img-cont {
+        display: none;
+    }
+    .grid-cont-bz {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5,1fr);
+        .grid1-2 {
+            grid-row: 1;
+            grid-column: 1;
+        }
+        .grid1-1 {
+            grid-row: 2;
+        }
+    }
+    .portaf{
+        flex-direction: column;
+    }
+    
+    .bz-img {
+        display: none;
+    }
+    .bz-img2 {
+        display: flex !important;
+    }
+    .contacto {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        a {
+            width: 40%;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    /*******pagina de inicio*******/
+    /*header*/
+    .header-format {
+        width: 100%;
+        justify-content: space-around;
+        .header-izq {
+        }
+    }
+    .h1-text {
+        display: none;
+    }
+    .nav-visual {
+        display: none;
+    }
+    .drop-mq{
+        display: flex;
+    }
+    
+    /*articulo ppal*/
+    .h2-main {
+        width: 100%;
+    }
+    .main-text1 {
+        width: 100%;
+    }
+    .main-text2 {
+        width: 100%;
+    }
+    .main-grid-div {
+        grid-column: 1/ span 2;
+        grid-row: 1;
+        justify-content: start !important;
+    }
+    .main-grid-bg {
+        background-position: bottom;
+        background-size: 50%;
+    }
+    .main-btn {
+        width: 30%;
+    }
+    /*valores*/
+    .valores-style {
+       justify-content: start;
+       align-items: start;
+       width: 100%;
+    }
+    .cards-style {
+        justify-content: start;
+        align-items: center;
+        width: 50%;
+        background-image: radial-gradient(circle closest-side, #6c6c6c,  #323232);
+    }
+    .card-txt {
+        display: none;
+    }
+
+
+    /*footer*/
+    .footer-format {
+        justify-content: space-around;
+    
+        .footer-izq {
+            display: none;
+        }
+        .footer-logo {
+            width: 30%;
+            height: 30%;
+        }
+    }
+
+    /*****SERVICIOS*****/
+    .card-link {
+
+    }
+    .svcards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    /************/
+    /*barazzutti*/
+    /************/
+   
+    .grid-cont-bz {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5,1fr);
+        .grid1-2 {
+            grid-row: 1;
+            grid-column: 1;
+        }
+        .grid1-1 {
+            grid-row: 2;
+        }
+    }
+    .portaf{
+        flex-direction: column;
+    }
+     
+    .bz-img {
+        display: none;
+    }
+    .bz-img2 {
+        display: flex !important;
+    }
+
+    /**********************/
+    /*contacto*/
+    .contacto {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        a {
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}

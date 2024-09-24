@@ -26,6 +26,7 @@
     .header-der {
         list-style-type: none;
         margin-right: 15px;
+        width: 100%;
         .lista-nav {
             background-color: transparent;
             display: flex;
@@ -33,11 +34,11 @@
                 display: flex;
                 margin: 10px;
                 padding: 5px;
-                border: 1px solid black;
-                border-radius: 20px;
-                box-shadow: 
-                    1px 1px 0 #ec6892,
-                    -1px -1px 0 #FFE4ED;;            
+                border-radius: 10px;
+               /* box-shadow:
+                    3px 3px 3px #000000; */
+                    /*3px 3px 0 #ec6892,
+                    -3px -3px 0 #FFE4ED;*/            
                 a {
                     @extend .link-dec;
                 }
@@ -46,8 +47,7 @@
             }
             .nav-item:hover {
                 box-shadow: 
-                    1px 1px 0 #FFE4ED,
-                    -1px -1px 0 #ec6892;;
+                    3px 3px 3px #000000;                    ;
                 transform: scale(1.1,1.1);
             }
         }

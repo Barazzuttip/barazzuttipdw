@@ -14,8 +14,10 @@
     width: 100%;
     align-items: center;
     margin-bottom: 50px;
+
     .cards-section-title {
         margin-bottom: 20px;
+
         .cst-name {
             @extend .h2-main;
             width: 100%;
@@ -30,29 +32,42 @@
 .bz-layout {
     display: flex;
     justify-content: end;
+
     .bz-info {
-        width: 50%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: start;
     }
+
     .bz-img-cont {
         display: flex;
         justify-content: start;
         width: 50%;
+
         .bz-img {
             width: 70%;
+        }
+
+        .bz-img2 {
+            display: none;
+            width: 100%;
         }
     }
 
 }
+
 .certif {
     margin: 15px;
     border: 5px double #FEACC6;
     border-radius: 25px;
-    width: 180%; 
-    height: 79%;
+    width: fit-content;
+    height: auto;
+    box-shadow:
+        4px 4px 2px #000000;
 }
+
 .portaf {
     display: flex;
 }
@@ -60,12 +75,13 @@
 .faq {
     background-color: #323232;
     padding: 100px;
+
     .faq-acc {
-       margin: 30px;
-       border-radius: 10px;
-       box-shadow: 
-       5px 5px #FEACC6,
-       -5px -5px #FFE4ED;
+        margin: 30px;
+        border-radius: 10px;
+        box-shadow:
+            5px 5px #FEACC6,
+            -5px -5px #FFE4ED;
     }
 }
 
@@ -79,12 +95,26 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    .cont-card {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        img {
-            width: 75%;
+    a {
+        width: 30%;
+        .cont-card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            width: 100%;
+            transition: transform 1s ease, box-shadow 0.7s ease;
+            &:hover {
+                transform: rotate3d(-1,1,0, 30deg) scale(1.2,1.2);
+                box-shadow:
+                    5px 5px 2px #323232;
+    
+            }
+    
+            img {
+                width: 100%;
+            }
         }
     }
+    
 }

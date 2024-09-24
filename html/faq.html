@@ -16,13 +16,25 @@
 
 </head>
 
-<body>
+<body style="background-color: #323232;">
     <header class="header-format">
         <div class="header-izq">
             <img src="../assets/Bz-logo.png" alt="logo bz" class="logo-img-format">
             <h1 class="h1-text">Pablo Barazzutti <span class="highlight">Desarrollo Web</span></h1>
         </div>
-        <nav>
+        <div class="dropdown drop-mq">
+          <button class="btn btn-secondary dropdown-toggle btn-drop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Menu
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Inicio</a></li>
+            <li><a class="dropdown-item" href="#">Servicios</a></li>
+            <li><a class="dropdown-item" href="#">Barazzutti</a></li>
+            <li><a class="dropdown-item" href="#">FAQ</a></li>
+            <li><a class="dropdown-item" href="#">Contacto</a></li>
+          </ul>
+      </div>
+        <nav class="nav-visual">
             <div class="header-der">
                 <ul class="lista-nav">
                     <li class="nav-item"><a href="../index.html">Inicio</a></li>

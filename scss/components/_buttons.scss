@@ -15,3 +15,20 @@
     color: #FEACC6;
     /*@extend formato de texto para el boton*/
 }
+.btn-drop {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'kodchasan-medium' !important;
+    display: flex;
+    margin: 10px;
+    padding: 5px;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    border: none !important;
+    background-image: linear-gradient(to bottom, #151515, #323232) !important;
+    box-shadow:
+        4px 4px 3px #000000;
+    border-radius: 5px;
+    color: #FFE4ED !important;
+}
