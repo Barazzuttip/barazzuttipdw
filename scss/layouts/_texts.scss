@@ -37,6 +37,9 @@
 }
 .title-h4 {
     color: #FFE4ED;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgba($color: #323232, $alpha: 0.9);
     font-size: 20px;
     font-family: 'kodchasan-bold';
     margin-top: 15px;
@@ -47,4 +50,7 @@
     font-weight: 500;
     color: #FFE4ED;
     margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgba($color: #323232, $alpha: 0.9);
 }

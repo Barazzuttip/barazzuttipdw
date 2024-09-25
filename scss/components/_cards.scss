@@ -4,7 +4,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: radial-gradient(circle closest-side, #6c6c6c, #323232);
+    background-color: rgba($color: #323232, $alpha: 0.8) !important;
+    box-shadow: 
+    4px 4px 2px #000000;
     margin-left: 25px;
     margin-right: 25px;
 
@@ -61,7 +63,7 @@
     color: #FEACC6 !important;
     ;
     border-radius: 8px;
-    background-color: transparent !important;
+    background-color: rgba($color: #323232, $alpha: 0.6) !important;
     border: none !important;
     
     padding: 5px;
@@ -96,6 +98,9 @@
 .bz-card {
     margin-top: 25px;
     margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     .bz-card-img {
         width: 256px;
@@ -118,10 +123,16 @@
 
     .bz-card-body {
         display: flex;
+        background-color: rgba($color: #323232, $alpha: 0.8);
         flex-direction: column;
         align-items: start;
         text-align: start;
         margin-top: 25px;
+        padding: 5px;
+        border-radius: 10px;
+        background-color: rgba($color: #323232, $alpha: 0.9);
+        box-shadow: 
+        4px 4px 2px#000000;
 
         h3 {
             font-size: 24px;

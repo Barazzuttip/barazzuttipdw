@@ -28,7 +28,10 @@
 }
 
 html, body {
-  background-color: #323232;
+  background-image: url(../../assets/portafolio-bg-dsktop.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main-grid-bg {
@@ -84,6 +87,9 @@ html, body {
 
 .title-h4 {
   color: #FFE4ED;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgba(50, 50, 50, 0.9);
   font-size: 20px;
   font-family: "kodchasan-bold";
   margin-top: 15px;
@@ -95,6 +101,9 @@ html, body {
   font-weight: 500;
   color: #FFE4ED;
   margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgba(50, 50, 50, 0.9);
 }
 
 .header-format {
@@ -106,7 +115,7 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(to bottom, #151515, #323232);
+  background-image: linear-gradient(to bottom, rgba(21, 21, 21, 0.9), rgba(50, 50, 50, 0.9));
 }
 .header-format .header-izq {
   background-color: transparent;
@@ -189,6 +198,9 @@ html, body {
 
 .title-h4 {
   color: #FFE4ED;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgba(50, 50, 50, 0.9);
   font-size: 20px;
   font-family: "kodchasan-bold";
   margin-top: 15px;
@@ -200,6 +212,9 @@ html, body {
   font-weight: 500;
   color: #FFE4ED;
   margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgba(50, 50, 50, 0.9);
 }
 
 .h1-text {
@@ -246,6 +261,9 @@ html, body {
 
 .title-h4 {
   color: #FFE4ED;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgba(50, 50, 50, 0.9);
   font-size: 20px;
   font-family: "kodchasan-bold";
   margin-top: 15px;
@@ -257,6 +275,9 @@ html, body {
   font-weight: 500;
   color: #FFE4ED;
   margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgba(50, 50, 50, 0.9);
 }
 
 .bz {
@@ -412,7 +433,7 @@ html, body {
   display: flex;
   justify-content: space-between;
   margin: 0;
-  background-image: linear-gradient(to top, #151515, #323232);
+  background-image: linear-gradient(to bottom, rgba(50, 50, 50, 0.9), rgba(21, 21, 21, 0.9));
 }
 .footer-format .footer-logo {
   width: 10%;
@@ -570,6 +591,9 @@ html, body {
 
 .title-h4 {
   color: #FFE4ED;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgba(50, 50, 50, 0.9);
   font-size: 20px;
   font-family: "kodchasan-bold";
   margin-top: 15px;
@@ -581,13 +605,17 @@ html, body {
   font-weight: 500;
   color: #FFE4ED;
   margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgba(50, 50, 50, 0.9);
 }
 
 .cards-style {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: radial-gradient(circle closest-side, #6c6c6c, #323232);
+  background-color: rgba(50, 50, 50, 0.8) !important;
+  box-shadow: 4px 4px 2px #000000;
   margin-left: 25px;
   margin-right: 25px;
 }
@@ -637,7 +665,7 @@ html, body {
   text-decoration-thickness: 1px !important;
   color: #FEACC6 !important;
   border-radius: 8px;
-  background-color: transparent !important;
+  background-color: rgba(50, 50, 50, 0.6) !important;
   border: none !important;
   padding: 5px;
   transition: box-shadow 0.5s ease, transform 0.5s ease !important;
@@ -665,6 +693,9 @@ html, body {
 .bz-card {
   margin-top: 25px;
   margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .bz-card .bz-card-img {
   width: 256px;
@@ -682,10 +713,15 @@ html, body {
 }
 .bz-card .bz-card-body {
   display: flex;
+  background-color: rgba(50, 50, 50, 0.8);
   flex-direction: column;
   align-items: start;
   text-align: start;
   margin-top: 25px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgba(50, 50, 50, 0.9);
+  box-shadow: 4px 4px 2px #000000;
 }
 .bz-card .bz-card-body h3 {
   font-size: 24px;
@@ -783,7 +819,7 @@ html, body {
   .grid-cont-bz {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 0.5fr);
   }
   .grid-cont-bz .grid1-2 {
     grid-row: 1;
@@ -810,6 +846,11 @@ html, body {
     width: 40%;
     display: flex;
     justify-content: space-around;
+  }
+  body, html {
+    background-image: url(../../assets/portafolios-bg-mbl.png) !important;
+    background-size: cover;
+    background-position: top center;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -860,7 +901,7 @@ html, body {
     justify-content: start;
     align-items: center;
     width: 50%;
-    background-image: radial-gradient(circle closest-side, #6c6c6c, #323232);
+    margin: 5px;
   }
   .card-txt {
     display: none;
@@ -887,7 +928,7 @@ html, body {
   .grid-cont-bz {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 0.5fr);
   }
   .grid-cont-bz .grid1-2 {
     grid-row: 1;
@@ -916,6 +957,10 @@ html, body {
     width: 50%;
     display: flex;
     justify-content: space-around;
+  }
+  body, html {
+    background-image: url(../../assets/portafolios-bg-mbl.png) !important;
+    background-repeat: repeat-y;
   }
 }
 
