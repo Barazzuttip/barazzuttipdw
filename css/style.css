@@ -28,7 +28,7 @@
 }
 
 html, body {
-  background-image: url(../../assets/portafolio-bg-dsktop.png);
+  background-image: url(../assets/portafolio-bg-dsktop.png);
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -959,7 +959,7 @@ html, body {
     justify-content: space-around;
   }
   body, html {
-    background-image: url(../../assets/portafolios-bg-mbl.png) !important;
+    background-image: url(../assets/portafolios-bg-mbl.png) !important;
     background-repeat: repeat-y;
   }
 }
