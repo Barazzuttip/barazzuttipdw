@@ -301,7 +301,7 @@ html, body {
   width: 50%;
 }
 .bz-layout .bz-img-cont .bz-img {
-  width: 70%;
+  width: 100%;
 }
 .bz-layout .bz-img-cont .bz-img2 {
   display: none;
@@ -400,8 +400,8 @@ html, body {
   align-items: center;
 }
 .grid-cont-bz .grid2-2 {
-  width: 96px;
-  height: 96px;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
