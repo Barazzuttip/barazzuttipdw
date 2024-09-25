@@ -634,6 +634,7 @@ html, body {
   /*buscar una mejor fuente*/
   font-weight: bold;
   text-decoration: underline !important;
+  text-decoration-thickness: 1px !important;
   color: #FEACC6 !important;
   border-radius: 8px;
   background-color: transparent !important;
