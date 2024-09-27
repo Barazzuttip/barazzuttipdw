@@ -36,13 +36,15 @@
     text-decoration: none;
 }
 .title-h4 {
-    color: #FFE4ED;
+    color: #323232;
     padding: 5px;
     border-radius: 10px;
-    background-color: rgba($color: #323232, $alpha: 0.9);
+    background-color: rgba($color: #FFE4ED, $alpha: 0.8);
     font-size: 20px;
     font-family: 'kodchasan-bold';
     margin-top: 15px;
+    box-shadow: 
+    3px 3px 1px #000000;
 }
 .just-text {
     font-size: 16px;
@@ -52,5 +54,5 @@
     margin: 5px;
     padding: 5px;
     border-radius: 10px;
-    background-color: rgba($color: #323232, $alpha: 0.9);
+    background-color: rgba($color: #323232, $alpha: 0.8);
 }

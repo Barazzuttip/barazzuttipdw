@@ -27,6 +27,17 @@
   height: auto;
 }
 
+.flyer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.flyer img {
+  width: 100%;
+}
+
 html, body {
   background-image: url(../assets/portafolio-bg-dsktop.png);
   background-position: top left;
@@ -86,13 +97,14 @@ html, body {
 }
 
 .title-h4 {
-  color: #FFE4ED;
+  color: #323232;
   padding: 5px;
   border-radius: 10px;
-  background-color: rgba(50, 50, 50, 0.9);
+  background-color: rgba(255, 228, 237, 0.8);
   font-size: 20px;
   font-family: "kodchasan-bold";
   margin-top: 15px;
+  box-shadow: 3px 3px 1px #000000;
 }
 
 .just-text {
@@ -103,7 +115,7 @@ html, body {
   margin: 5px;
   padding: 5px;
   border-radius: 10px;
-  background-color: rgba(50, 50, 50, 0.9);
+  background-color: rgba(50, 50, 50, 0.8);
 }
 
 .header-format {
@@ -197,13 +209,14 @@ html, body {
 }
 
 .title-h4 {
-  color: #FFE4ED;
+  color: #323232;
   padding: 5px;
   border-radius: 10px;
-  background-color: rgba(50, 50, 50, 0.9);
+  background-color: rgba(255, 228, 237, 0.8);
   font-size: 20px;
   font-family: "kodchasan-bold";
   margin-top: 15px;
+  box-shadow: 3px 3px 1px #000000;
 }
 
 .just-text {
@@ -214,7 +227,7 @@ html, body {
   margin: 5px;
   padding: 5px;
   border-radius: 10px;
-  background-color: rgba(50, 50, 50, 0.9);
+  background-color: rgba(50, 50, 50, 0.8);
 }
 
 .h1-text {
@@ -260,13 +273,14 @@ html, body {
 }
 
 .title-h4 {
-  color: #FFE4ED;
+  color: #323232;
   padding: 5px;
   border-radius: 10px;
-  background-color: rgba(50, 50, 50, 0.9);
+  background-color: rgba(255, 228, 237, 0.8);
   font-size: 20px;
   font-family: "kodchasan-bold";
   margin-top: 15px;
+  box-shadow: 3px 3px 1px #000000;
 }
 
 .just-text {
@@ -277,7 +291,7 @@ html, body {
   margin: 5px;
   padding: 5px;
   border-radius: 10px;
-  background-color: rgba(50, 50, 50, 0.9);
+  background-color: rgba(50, 50, 50, 0.8);
 }
 
 .bz {
@@ -590,13 +604,14 @@ html, body {
 }
 
 .title-h4 {
-  color: #FFE4ED;
+  color: #323232;
   padding: 5px;
   border-radius: 10px;
-  background-color: rgba(50, 50, 50, 0.9);
+  background-color: rgba(255, 228, 237, 0.8);
   font-size: 20px;
   font-family: "kodchasan-bold";
   margin-top: 15px;
+  box-shadow: 3px 3px 1px #000000;
 }
 
 .just-text {
@@ -607,7 +622,7 @@ html, body {
   margin: 5px;
   padding: 5px;
   border-radius: 10px;
-  background-color: rgba(50, 50, 50, 0.9);
+  background-color: rgba(50, 50, 50, 0.8);
 }
 
 .cards-style {
@@ -720,7 +735,6 @@ html, body {
   margin-top: 25px;
   padding: 5px;
   border-radius: 10px;
-  background-color: rgba(50, 50, 50, 0.9);
   box-shadow: 4px 4px 2px #000000;
 }
 .bz-card .bz-card-body h3 {
