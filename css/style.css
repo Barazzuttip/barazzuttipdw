@@ -5,16 +5,16 @@
 }
 
 @font-face {
-  font-family: "kodchasan-bold";
-  src: url("../assets/Kodchasan-Bold.ttf");
+  font-family: "Metrophobic";
+  src: url("../../assets/Metrophobic-Regular.ttf");
 }
 @font-face {
-  font-family: "kodchasan-medium";
-  src: url("../assets/Kodchasan-Medium.ttf");
+  font-family: "MergeOne";
+  src: url("../../assets/MergeOne-Regular.ttf");
 }
 @font-face {
-  font-family: "Jura";
-  src: url("../assets/Jura-VariableFont_wght.ttf");
+  font-family: "txt-font";
+  src: url("../../assets/LeagueSpartan-VariableFont_wght.ttf");
 }
 .logo-img-format {
   height: 56px;
@@ -55,8 +55,8 @@ html, body {
 }
 
 .h1-text {
-  color: #FEACC6;
-  font-family: "Jura";
+  color: #8AF927;
+  font-family: "Metrophobic";
   font-size: 1.5rem;
   text-align: center;
   /*text-shadow:
@@ -66,9 +66,9 @@ html, body {
 
 .h2-main, .valores-div .cards-section-title .cst-name {
   font-size: 1.5rem;
-  font-family: "kodchasan-bold";
+  font-family: "Metrophobic";
   width: 100%;
-  color: #FEACC6;
+  color: #8AF927;
   text-shadow: 2px 2px 3px #000000;
 }
 
@@ -90,7 +90,7 @@ html, body {
 
 .link-dec, .header-format .header-der .lista-nav .nav-item a {
   color: #FFE4ED;
-  font-family: "kodchasan-medium";
+  font-family: "Metrophobic";
   font-size: 16px;
   font-weight: lighter;
   text-decoration: none;
@@ -100,16 +100,16 @@ html, body {
   color: #323232;
   padding: 5px;
   border-radius: 10px;
-  background-color: rgba(255, 228, 237, 0.8);
+  background-color: rgba(138, 249, 39, 0.8);
   font-size: 20px;
-  font-family: "kodchasan-bold";
+  font-family: "Metrophobic";
   margin-top: 15px;
   box-shadow: 3px 3px 1px #000000;
 }
 
 .just-text {
   font-size: 16px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "txt-font";
   font-weight: 500;
   color: #FFE4ED;
   margin: 5px;
@@ -148,27 +148,24 @@ html, body {
 .header-format .header-der .lista-nav {
   background-color: transparent;
   display: flex;
+  margin-bottom: 0;
 }
 .header-format .header-der .lista-nav .nav-item {
   display: flex;
   margin: 10px;
   padding: 5px;
   border-radius: 10px;
-  /* box-shadow:
-       3px 3px 3px #000000; */
-  /*3px 3px 0 #ec6892,
-  -3px -3px 0 #FFE4ED;*/
   cursor: pointer;
   transition: transform 0.5s ease;
 }
 .header-format .header-der .lista-nav .nav-item:hover {
-  box-shadow: 3px 3px 3px #000000;
+  box-shadow: 3px 3px 3px #8AF927;
   transform: scale(1.1, 1.1);
 }
 
 .h1-text {
-  color: #FEACC6;
-  font-family: "Jura";
+  color: #8AF927;
+  font-family: "Metrophobic";
   font-size: 1.5rem;
   text-align: center;
   /*text-shadow:
@@ -178,9 +175,9 @@ html, body {
 
 .h2-main, .valores-div .cards-section-title .cst-name {
   font-size: 1.5rem;
-  font-family: "kodchasan-bold";
+  font-family: "Metrophobic";
   width: 100%;
-  color: #FEACC6;
+  color: #8AF927;
   text-shadow: 2px 2px 3px #000000;
 }
 
@@ -202,7 +199,7 @@ html, body {
 
 .link-dec, .header-format .header-der .lista-nav .nav-item a {
   color: #FFE4ED;
-  font-family: "kodchasan-medium";
+  font-family: "Metrophobic";
   font-size: 16px;
   font-weight: lighter;
   text-decoration: none;
@@ -212,16 +209,16 @@ html, body {
   color: #323232;
   padding: 5px;
   border-radius: 10px;
-  background-color: rgba(255, 228, 237, 0.8);
+  background-color: rgba(138, 249, 39, 0.8);
   font-size: 20px;
-  font-family: "kodchasan-bold";
+  font-family: "Metrophobic";
   margin-top: 15px;
   box-shadow: 3px 3px 1px #000000;
 }
 
 .just-text {
   font-size: 16px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "txt-font";
   font-weight: 500;
   color: #FFE4ED;
   margin: 5px;
@@ -231,8 +228,8 @@ html, body {
 }
 
 .h1-text {
-  color: #FEACC6;
-  font-family: "Jura";
+  color: #8AF927;
+  font-family: "Metrophobic";
   font-size: 1.5rem;
   text-align: center;
   /*text-shadow:
@@ -242,9 +239,9 @@ html, body {
 
 .h2-main, .valores-div .cards-section-title .cst-name {
   font-size: 1.5rem;
-  font-family: "kodchasan-bold";
+  font-family: "Metrophobic";
   width: 100%;
-  color: #FEACC6;
+  color: #8AF927;
   text-shadow: 2px 2px 3px #000000;
 }
 
@@ -266,7 +263,7 @@ html, body {
 
 .link-dec, .header-format .header-der .lista-nav .nav-item a {
   color: #FFE4ED;
-  font-family: "kodchasan-medium";
+  font-family: "Metrophobic";
   font-size: 16px;
   font-weight: lighter;
   text-decoration: none;
@@ -276,16 +273,16 @@ html, body {
   color: #323232;
   padding: 5px;
   border-radius: 10px;
-  background-color: rgba(255, 228, 237, 0.8);
+  background-color: rgba(138, 249, 39, 0.8);
   font-size: 20px;
-  font-family: "kodchasan-bold";
+  font-family: "Metrophobic";
   margin-top: 15px;
   box-shadow: 3px 3px 1px #000000;
 }
 
 .just-text {
   font-size: 16px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "txt-font";
   font-weight: 500;
   color: #FFE4ED;
   margin: 5px;
@@ -345,10 +342,10 @@ html, body {
 
 .certif {
   margin: 15px;
-  border: 5px double #FEACC6;
+  border: 5px double #8AF927;
   border-radius: 25px;
   width: fit-content;
-  height: auto;
+  height: 105%;
   box-shadow: 4px 4px 2px #000000;
 }
 
@@ -363,7 +360,7 @@ html, body {
 .faq .faq-acc {
   margin: 30px;
   border-radius: 10px;
-  box-shadow: 5px 5px #FEACC6, -5px -5px #FFE4ED;
+  box-shadow: 5px 5px #8AF927, -5px -5px #5c9f24;
 }
 
 .contacto {
@@ -504,7 +501,7 @@ html, body {
   margin-right: 25px;
 }
 .footer-format .footer-der h5 {
-  color: #FEACC6;
+  color: #8AF927;
   font-size: 18px;
 }
 .footer-format .footer-der ul {
@@ -540,7 +537,7 @@ html, body {
   background-color: #151515;
   box-shadow: 4px 4px 3px #000000;
   border-radius: 5px;
-  color: #FEACC6;
+  color: #8AF927;
   /*@extend formato de texto para el boton*/
 }
 
@@ -562,8 +559,8 @@ html, body {
 }
 
 .h1-text {
-  color: #FEACC6;
-  font-family: "Jura";
+  color: #8AF927;
+  font-family: "Metrophobic";
   font-size: 1.5rem;
   text-align: center;
   /*text-shadow:
@@ -573,9 +570,9 @@ html, body {
 
 .h2-main, .valores-div .cards-section-title .cst-name {
   font-size: 1.5rem;
-  font-family: "kodchasan-bold";
+  font-family: "Metrophobic";
   width: 100%;
-  color: #FEACC6;
+  color: #8AF927;
   text-shadow: 2px 2px 3px #000000;
 }
 
@@ -597,7 +594,7 @@ html, body {
 
 .link-dec, .header-format .header-der .lista-nav .nav-item a {
   color: #FFE4ED;
-  font-family: "kodchasan-medium";
+  font-family: "Metrophobic";
   font-size: 16px;
   font-weight: lighter;
   text-decoration: none;
@@ -607,16 +604,16 @@ html, body {
   color: #323232;
   padding: 5px;
   border-radius: 10px;
-  background-color: rgba(255, 228, 237, 0.8);
+  background-color: rgba(138, 249, 39, 0.8);
   font-size: 20px;
-  font-family: "kodchasan-bold";
+  font-family: "Metrophobic";
   margin-top: 15px;
   box-shadow: 3px 3px 1px #000000;
 }
 
 .just-text {
   font-size: 16px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "txt-font";
   font-weight: 500;
   color: #FFE4ED;
   margin: 5px;
@@ -636,7 +633,7 @@ html, body {
 }
 .cards-style .img-card {
   width: 48px;
-  background-color: #FEACC6;
+  background-color: #8AF927;
   border: 10px double #323232;
   opacity: 100%;
   border-radius: 10px;
@@ -648,21 +645,25 @@ html, body {
   align-items: center;
   margin: 5px;
 }
+.cards-style .card-body-style .card-title {
+  font-family: "MergeOne";
+}
 .cards-style .card-body-style .card-txt {
   text-align: center;
+  font-family: "txt-font";
 }
 .cards-style .card-body-style .svcard-t {
-  font-family: "jura";
+  font-family: "MergeOne";
   font-size: 2rem;
   color: #FFE4ED;
   text-align: center;
 }
 .cards-style .card-body-style .svcard-subt,
 .cards-style .card-body-style h4 {
-  font-family: "kodchasan-bold";
+  font-family: "Metrophobic";
   margin: 5px;
   font-size: 1.5rem;
-  color: #FEACC6;
+  color: #8AF927;
 }
 .cards-style .card-body-style p,
 .cards-style .card-body-style ul {
@@ -673,12 +674,11 @@ html, body {
 
 .card-link {
   font-size: 18px;
-  font-family: "jura";
-  /*buscar una mejor fuente*/
-  font-weight: bold;
+  font-family: "MergeOne" !important;
+  font-weight: normal;
   text-decoration: underline !important;
   text-decoration-thickness: 1px !important;
-  color: #FEACC6 !important;
+  color: #8AF927 !important;
   border-radius: 8px;
   background-color: rgba(50, 50, 50, 0.6) !important;
   border: none !important;
@@ -689,7 +689,7 @@ html, body {
   color: #FFE4ED !important;
   background-color: transparent;
   transform: scale(1.1, 1.1);
-  box-shadow: 3px 3px 3px #151515;
+  box-shadow: 3px 3px 3px #8AF927;
 }
 .card-link .svcard-img {
   width: 48px;
@@ -717,7 +717,7 @@ html, body {
   height: 154px;
   object-fit: cover;
   object-position: top;
-  box-shadow: 3px 3px 0 #FEACC6, -3px -3px 0 #ec6892;
+  box-shadow: 3px 3px 0 #8AF927, -3px -3px 0 #5c9f24;
   transition: transform 0.5s ease, box-shadow 0.5s ease;
   /*border: 4px double #FEACC6;*/
   border-radius: 25px;

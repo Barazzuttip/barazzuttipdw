@@ -12,7 +12,7 @@
 
     .img-card {
         width: 48px;
-        background-color: #FEACC6;
+        background-color: #8AF927;
         border: 10px double #323232;
         opacity: 100%;
         border-radius: 10px;
@@ -24,13 +24,16 @@
         flex-direction: column;
         align-items: center;
         margin: 5px;
-
+        .card-title{
+        font-family: 'MergeOne';
+        }
         .card-txt {
             text-align: center;
+            font-family: 'txt-font';
         }
 
         .svcard-t {
-            font-family: 'jura';
+            font-family: 'MergeOne';
             font-size: 2rem;
             color: #FFE4ED;
             text-align: center;
@@ -38,10 +41,10 @@
 
         .svcard-subt,
         h4 {
-            font-family: 'kodchasan-bold';
+            font-family: 'Metrophobic';
             margin: 5px;
             font-size: 1.5rem;
-            color: #FEACC6;
+            color: #8AF927;
         }
 
         p,
@@ -55,13 +58,11 @@
 
 .card-link {
     font-size: 18px;
-    font-family: 'jura';
-    /*buscar una mejor fuente*/
-    font-weight: bold;
+    font-family: 'MergeOne' !important;
+    font-weight: normal;
     text-decoration: underline !important;
     text-decoration-thickness: 1px !important;
-    color: #FEACC6 !important;
-    ;
+    color: #8AF927 !important;
     border-radius: 8px;
     background-color: rgba($color: #323232, $alpha: 0.6) !important;
     border: none !important;
@@ -75,7 +76,7 @@
         background-color: transparent;
         transform: scale(1.1, 1.1);
         box-shadow:
-            3px 3px 3px #151515;
+            3px 3px 3px #8AF927;
     }
     .svcard-img {
         width: 48px;
@@ -108,8 +109,8 @@
         object-fit: cover;
         object-position: top;
         box-shadow:
-            3px 3px 0 #FEACC6,
-            -3px -3px 0 #ec6892;
+            3px 3px 0 #8AF927,
+            -3px -3px 0 #5c9f24;
         transition: transform 0.5s ease, box-shadow 0.5s ease;
         /*border: 4px double #FEACC6;*/
         border-radius: 25px;
