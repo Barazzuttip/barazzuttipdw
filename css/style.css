@@ -132,7 +132,7 @@ html, body {
 .header-format .header-izq {
   background-color: transparent;
   display: flex;
-  align-items: center;
+  align-items: end;
   padding: 10px;
   margin-left: 10px;
 }
@@ -761,7 +761,7 @@ html, body {
   color: transparent !important;
 }
 
-@media only screen and (min-width: 500px) and (max-width: 1024px) {
+@media only screen and (min-width: 500px) and (max-width: 1300px) {
   /*******pagina de inicio*******/
   /*header*/
   .header-format {
