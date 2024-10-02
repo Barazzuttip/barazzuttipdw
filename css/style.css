@@ -6,15 +6,15 @@
 
 @font-face {
   font-family: "Metrophobic";
-  src: url("../../assets/Metrophobic-Regular.ttf");
+  src: url("../assets/Metrophobic-Regular.ttf");
 }
 @font-face {
   font-family: "MergeOne";
-  src: url("../../assets/MergeOne-Regular.ttf");
+  src: url("../assets/MergeOne-Regular.ttf");
 }
 @font-face {
   font-family: "txt-font";
-  src: url("../../assets/LeagueSpartan-VariableFont_wght.ttf");
+  src: url("../assets/LeagueSpartan-VariableFont_wght.ttf");
 }
 .logo-img-format {
   height: 56px;
