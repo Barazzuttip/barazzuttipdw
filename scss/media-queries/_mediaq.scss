@@ -109,7 +109,7 @@
         }
     }
     body, html {
-        background-image: url(../../assets/portafolios-bg-mbl.png) !important;
+        /*background-image: url(../../assets/portafolios-bg-mbl.png) !important;*/
         background-size: cover;
         background-position: top center;
     }
@@ -234,7 +234,8 @@
         }
     }
     body, html {
-        background-image: url(../assets/portafolios-bg-mbl.png) !important;
-        background-repeat: repeat-y;
+       /* background-image: url(../assets/portafolios-bg-mbl.png) !important;*/
+        background-size: auto;
+        background-repeat: repeat;
     }
 }

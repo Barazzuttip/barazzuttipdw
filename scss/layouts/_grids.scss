@@ -1,6 +1,6 @@
 .main-grid {
     display: grid; /*grilla principal de la pagina*/
-    grid-template-columns: 2fr 1fr; /*filas y columnas*/
+    grid-template-columns: 1fr; /*filas y columnas*/
     grid-template-rows: auto;
     row-gap: 5px; 
     column-gap: 5px;

@@ -118,13 +118,13 @@
 
     .bz-card-img:hover {
         box-shadow:
-            3px 3px 2px #000000;
+            3px 3px 12px #000000;
         transform: scale(1.1, 1.1);
     }
 
     .bz-card-body {
         display: flex;
-        background-color: rgba($color: #323232, $alpha: 0.8);
+        background-color: rgba($color: #323232, $alpha: 1);
         flex-direction: column;
         align-items: start;
         text-align: start;
@@ -132,7 +132,7 @@
         padding: 5px;
         border-radius: 10px;
         box-shadow: 
-        4px 4px 2px#000000;
+        4px 4px 12px#000000;
 
         h3 {
             font-size: 24px;
