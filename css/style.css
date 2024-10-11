@@ -39,7 +39,7 @@
 }
 
 html, body {
-  background-image: url("../assets/bg-gif3.gif");
+  background-image: url("../assets/bg-gif4.gif");
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -120,7 +120,7 @@ html, body {
   margin: 5px;
   padding: 5px;
   border-radius: 10px;
-  background-color: #323232;
+  /*background-color: rgba($color: #323232, $alpha: 0.5)*/
 }
 
 .header-format {
@@ -132,7 +132,7 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(to bottom, rgba(21, 21, 21, 0.9), rgba(50, 50, 50, 0.9));
+  background-image: linear-gradient(to bottom, rgba(21, 21, 21, 0.7), rgba(50, 50, 50, 0.7));
 }
 .header-format .header-izq {
   background-color: transparent;
@@ -231,7 +231,7 @@ html, body {
   margin: 5px;
   padding: 5px;
   border-radius: 10px;
-  background-color: #323232;
+  /*background-color: rgba($color: #323232, $alpha: 0.5)*/
 }
 
 .h1-text {
@@ -297,7 +297,7 @@ html, body {
   margin: 5px;
   padding: 5px;
   border-radius: 10px;
-  background-color: #323232;
+  /*background-color: rgba($color: #323232, $alpha: 0.5)*/
 }
 
 .bz {
@@ -313,6 +313,7 @@ html, body {
   width: 100%;
   align-items: center;
   margin-bottom: 50px;
+  margin-top: 54px;
 }
 .valores-div .cards-section-title {
   margin-bottom: 20px;
@@ -363,7 +364,7 @@ html, body {
 }
 
 .faq {
-  background-color: rgba(50, 50, 50, 0.5);
+  background-color: transparent;
   padding: 100px;
 }
 .faq .faq-acc {
@@ -453,7 +454,7 @@ html, body {
   display: flex;
   justify-content: space-between;
   margin: 0;
-  background-image: linear-gradient(to bottom, rgba(50, 50, 50, 0.9), rgba(21, 21, 21, 0.9));
+  background-image: linear-gradient(to bottom, rgba(50, 50, 50, 0.7), rgba(21, 21, 21, 0.7));
 }
 .footer-format .footer-logo {
   width: 10%;
@@ -630,7 +631,7 @@ html, body {
   margin: 5px;
   padding: 5px;
   border-radius: 10px;
-  background-color: #323232;
+  /*background-color: rgba($color: #323232, $alpha: 0.5)*/
 }
 
 .cards-style {
@@ -641,6 +642,7 @@ html, body {
   box-shadow: 4px 4px 2px #000000;
   margin-left: 25px;
   margin-right: 25px;
+  height: fit-content !important;
 }
 .cards-style .img-card {
   width: 48px;
@@ -691,7 +693,7 @@ html, body {
   text-decoration-thickness: 1px !important;
   color: #8AF927 !important;
   border-radius: 8px;
-  background-color: rgba(50, 50, 50, 0.6) !important;
+  background-color: transparent !important;
   border: none !important;
   padding: 5px;
   transition: box-shadow 0.5s ease, transform 0.5s ease !important;
@@ -739,7 +741,7 @@ html, body {
 }
 .bz-card .bz-card-body {
   display: flex;
-  background-color: #323232;
+  background-color: rgba(50, 50, 50, 0.5);
   flex-direction: column;
   align-items: start;
   text-align: start;

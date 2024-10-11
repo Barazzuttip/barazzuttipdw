@@ -9,7 +9,7 @@
     4px 4px 2px #000000;
     margin-left: 25px;
     margin-right: 25px;
-
+    height: fit-content !important;
     .img-card {
         width: 48px;
         background-color: #8AF927;
@@ -64,7 +64,7 @@
     text-decoration-thickness: 1px !important;
     color: #8AF927 !important;
     border-radius: 8px;
-    background-color: rgba($color: #323232, $alpha: 0.6) !important;
+    background-color: transparent !important;
     border: none !important;
     
     padding: 5px;
@@ -124,7 +124,7 @@
 
     .bz-card-body {
         display: flex;
-        background-color: rgba($color: #323232, $alpha: 1);
+        background-color: rgba($color: #323232, $alpha: 0.5);
         flex-direction: column;
         align-items: start;
         text-align: start;
