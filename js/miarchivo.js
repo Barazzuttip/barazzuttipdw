@@ -1,4 +1,4 @@
-const precioMM = 80;
+//declaracion de constantes, variables, clases y funciones
 const precioDiseno = 50;
 const precioLP = 140;
 const precioSWI = 200;
@@ -8,8 +8,9 @@ const mantenimiento = 20;
 
 let precioAcumulado = 0;
 
-//declaracion de variables, clases y funciones
+
 let servicios = [];
+let quiereCuotas;
 
 class Servicio {
     constructor(nom, cantPag, hayManten, hayMockup, precio) {
@@ -50,20 +51,52 @@ function verPropiedades(i) {
     alert(mensaje + '(precio en USD)');
 }
 
+//funcion si el usuario decide comrpar.
+const servicioElegido = (tipoDeServicio) => {
+    alert(`usted ha seleccionado ${servicios[tipoDeServicio].nombre}, cuyo valor es de ${servicios[tipoDeServicio].precio} USD\nPara continuar, contactate a barazzuttip@gmail.com o por Whats App al +5492804637812`);
+    quiereCuotas = confirm('Desea abonar en cuotas?');
+}
+
+
 //Sección de preguntas, para la opción 4
 //la funcion tendra opciones numericas
 //si el usuario ingresa un numero no valido, o algun otro caracter, se le pedira que responda correctamente.
 
 function preguntas(text, precio) {
     let aux = parseInt(prompt(text));
-    let precioAcumuladoAux = precioAcumulado; //asi se evita modificar el valor del precio acumulado dentro de la funcion
+    let decision = false;
+    let precioAcumuladoAux = precioAcumulado; //asi se evita modificar el valor del precio acumulado dentro de la funcion, y mantiene el valor actualizado pregunta a pregunta.
     while (typeof (aux) != Number && aux !== 1 && aux !== 2) {
         aux = parseInt(prompt('Por favor respondé con un número válido\n' + text));
     }
     if (aux === 2) {
         precioAcumuladoAux = precioAcumuladoAux + precio;
+        decision = true;
     }
-    return precioAcumuladoAux;
+    return {
+        acumulado: precioAcumuladoAux, //ahora la funcion debe retornar un objeto para poder guardar qué contestó, y el precio acumulado
+        necesita: decision
+    };
+}
+//pregunta sobre el tipo de servicio personalizaod, para abstraer las preguntas en una funcion de orden superior
+
+const servPersPreg = (preg, acum) => {
+    let resp = parseInt(prompt(preg));
+    let precioAcumuladoAux;
+    if (resp == 1 || resp == 2 || resp == 3) {
+        precioAcumuladoAux = acum + servicios[resp - 1].precio;
+        console.log(precioAcumuladoAux);
+    } else {
+        alert('Respuesta no válida, actualizá y volvé a intentar');
+    }
+    return {
+        acumulado: precioAcumuladoAux, //ahora la funcion debe retornar un objeto para poder guardar qué contestó, y el precio acumulado
+        respuesta: resp
+    };
+}
+
+const gestorDePreguntas = (preg, func, precio) => {
+    return func(preg, precio);
 }
 
 
@@ -96,7 +129,6 @@ function cuotas(total, cant) {
 
 
 //FUNCIÓN DE ORDEN SUPERIOR
-//IDEA: FUNCION PARA ELEGIR FUNCIONES, ENTRE MODIFICARPRECIO, MODIFICAR MANTENIMIENTO, MODIFICAR MOCKUP
 const modificarPrecio = (i, nuevoValor) => {
     if (i >= 1 && i <= servicios.length)
         servicios[i - 1].precio = nuevoValor;
@@ -113,8 +145,8 @@ const modificarMockup = (i, valorMockup) => {
     }
 }
 
-const modificarPropiedad = (i,actualizacion,funcion) => {
-    funcion(i,actualizacion);
+const modificarPropiedad = (i, actualizacion, funcion) => {
+    funcion(i, actualizacion);
 }
 
 //esta seccion puede usarse para probar la funcion de orden superior modificarPropiedad
@@ -137,45 +169,50 @@ while (typeof (seleccion) != Number && seleccion !== 1 && seleccion !== 2 && sel
 }
 
 // primer respuesta
-let quiereCuotas;
 let tipoDeServicio = seleccion - 1;
 switch (seleccion) { //en el caso de comprar un producto, se podria agregar a una variable miCompra, pero considero mas logico y real que al momento de vender un sitio web no se pague hasta haber charlado con el desarrollador.
     case 1:
-        alert(`usted ha seleccionado ${servicios[tipoDeServicio].nombre}, cuyo valor base es de ${servicios[tipoDeServicio].precio} USD\nPara continuar, contactate a barazzuttip@gmail.com o por Whats App al +5492804637812`);
-        quiereCuotas = confirm('Desea abonar en cuotas?');
-        break
+
     case 2:
-        alert(`usted ha seleccionado ${servicios[tipoDeServicio].nombre}, cuyo valor base es de ${servicios[tipoDeServicio].precio} USD\nPara continuar, contactate a barazzuttip@gmail.com o por Whats App al +5492804637812`);
-        quiereCuotas = confirm('Desea abonar en cuotas?');
-        break
+
     case 3:
-        alert(`usted ha seleccionado ${servicios[tipoDeServicio].nombre}, cuyo valor base es de ${servicios[tipoDeServicio].precio} USD\nPara continuar, contactate a barazzuttip@gmail.com o por Whats App al +5492804637812`);
-        quiereCuotas = confirm('Desea abonar en cuotas?');
+        servicioElegido(tipoDeServicio);
         break
-    case 4: //se calcula el precio del sitio personalizado
-        precioAcumulado = preguntas('Tenés tu manual de marca?\n1-Si\n2-No', precioMM);
-        console.log(precioAcumulado); //solo necesario para chequear la correcta suma de precios
+    case 4: {
+        //se calcula el precio del sitio personalizado
+        // las funciones actualizan una variable auxiliar interna con el valor de precioAcumulado
+        //precioAcumulado se actualiza con la variable auxiliar acumuladoAux, que es otra variable auxiliar, dentro del switch
+        let acumuladoAux;
+        //paso 1
+        acumuladoAux = gestorDePreguntas('Tenés el diseño del sitio?\n1-Si\n2-No', preguntas, precioDiseno);
+        console.log(acumuladoAux.acumulado);
+        necesitaDiseno = acumuladoAux.necesita;
 
-        precioAcumulado = preguntas('Tenés el diseño del sitio?\n1-Si\n2-No', precioDiseno);
+        precioAcumulado += acumuladoAux.acumulado;
         console.log(precioAcumulado);
 
-        precioAcumulado = preguntas('Tu pagina requiere de mantenimiento/actualizacion de contenido?\n1-No\n2-Si', mantenimiento);
+        //paso 2
+        acumuladoAux = gestorDePreguntas('Tu pagina requiere de mantenimiento/actualizacion de contenido?\n1-No\n2-Si', preguntas, mantenimiento);
+        necesitaMant = acumuladoAux.necesita;
+        console.log(acumuladoAux.acumulado);
+
+        precioAcumulado = acumuladoAux.acumulado;
         console.log(precioAcumulado);
 
-        let resp = parseInt(prompt('Qué servicio te interesa?\n1-Landing Page (1 página).\n2-Sitio Web Institucional (5 páginas)\n3-E-commerce *(5 páginas + tienda)'));
+        //paso 3
+        acumuladoAux = gestorDePreguntas('Qué servicio te interesa?\n1-Landing Page (1 página).\n2-Sitio Web Institucional (5 páginas)\n3-E-commerce *(5 páginas + tienda)', servPersPreg, acumuladoAux.acumulado);
 
-        if (resp == 1) {
-            precioAcumulado = precioAcumulado + precioLP;
-        } else if (resp == 2) {
-            precioAcumulado = precioAcumulado + precioSWI;
-        } else if (resp == 3) {
-            precioAcumulado = precioAcumulado + precioEcomm;
-        } else {
-            alert('Respuesta no válida, actualizá y volvé a intentar');
-        }
-        alert('El precio total por el servicio será de ' + precioAcumulado + ' USD');
+        precioAcumulado = acumuladoAux.acumulado;
+        console.log(precioAcumulado);
+        resp = acumuladoAux.respuesta;
+        //ahora agrego el servicio creaddo por el cliente al array, para mantener la misma organizacion que los demas servicios
+        agregarServicio(servicios[resp - 1].nombre, servicios[resp - 1].Paginas, necesitaMant, necesitaDiseno, precioAcumulado);
+        servicioElegido(tipoDeServicio);
+        console.log(servicios);
         break
+    }
     case 5:
+        //no es necesario chequear que el numero no sea entero porque parseInt lo convierte
         let consulta = parseInt(prompt('Seleccione el sitio sobre el que desea consultar\n1-Landing Page\n2- Sitio Web Institucional\n3-E-commerce\n4-salir'));
 
         if (consulta <= 3 && consulta >= 1) {
@@ -198,13 +235,13 @@ if (quiereCuotas) {
     let costo = servicios[tipoDeServicio].precio;
     let resp2 = prompt('Ingresá en cuántas cuotas te gustaría pagar\n1-2 cuotas\n2-3 cuotas\n3-6 cuotas\n4-12 cuotas');
     if (resp2 == 1) {
-        valorTotal = Math.ceil(cuotas(costo, 2) * 100 / 100);
+        valorTotal = Math.ceil(cuotas(costo, 2));
     } else if (resp2 == 2) {
-        valorTotal = Math.ceil(cuotas(costo, 3) * 100 / 100);
+        valorTotal = Math.ceil(cuotas(costo, 3));
     } else if (resp2 == 3) {
-        valorTotal = Math.ceil(cuotas(costo, 6) * 100 / 100);
+        valorTotal = Math.ceil(cuotas(costo, 6));
     } else if (resp2 == 4) {
-        valorTotal = Math.ceil(cuotas(costo, 12) * 100 / 100);
+        valorTotal = Math.ceil(cuotas(costo, 12));
     } else {
         alert('Respuesta no válida, actualizá y volvé a intentar');
     }
