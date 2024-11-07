@@ -18,32 +18,34 @@ const divSvc = document.getElementById("svc-display-div");
 //const svcCard = document.getElementById("svc-card");
 //const svcList = document.getElementById("svc-list");
 
-
+let carrito = [];
 let servicios = [];
 localStorage.setItem("servicios", JSON.stringify(servicios));
+localStorage.setItem("carrito", JSON.stringify(carrito));
 let quiereCuotas;
 let precioAcumulado = 0;
 
 class Servicio {
-    constructor(nom, cantPag, hayManten, precio) {
+    constructor(nom, id, cantPag, hayManten, precio) {
         this.Nombre = nom;
+        this.id = id;
         this.Paginas = cantPag;
         this.Mantenimiento = hayManten;
         this.Precio = precio;
     }
 }
-const agregarServicio = (nom, cantPag, hayManten, precio) => {
+const agregarServicio = (nom, id,cantPag, hayManten, precio) => {
     const aux = JSON.parse(localStorage.getItem("servicios"));
     //me aseguro que siempre se guarde en el local un array con los 3 servicios basicos mas el que guarda el usuario.
     if (aux.length > 3)
         aux.pop();
-    aux.push(new Servicio(nom, cantPag, hayManten, precio));
+    aux.push(new Servicio(nom, id, cantPag, hayManten, precio));
     localStorage.setItem("servicios", JSON.stringify(aux));
 }
 
-agregarServicio('Landing Page', 1, true, precioLP);
-agregarServicio('Sitio Web Institucional', 5, true, precioSWI);
-agregarServicio('E-commerce', 9, true, precioEcomm);
+agregarServicio('Landing Page', 1, 1, true, precioLP);
+agregarServicio('Sitio Web Institucional', 2, 5, true, precioSWI);
+agregarServicio('E-commerce', 3, 9, true, precioEcomm);
 
 //cargo los servicios al localStorage
 
@@ -59,7 +61,7 @@ function verPropiedades() {
 
     //genero el div, le agrego clase e id
     const svcCard = document.createElement("div");
-    svcCard.className = "svc-cardstyle";
+    svcCard.className = "svc-cardstyle animate__animated animate__zoomIn";
     svcCard.id = "svc-card";
 
     //titulo
@@ -78,16 +80,16 @@ function verPropiedades() {
             const prop = document.createElement("li");
             if (typeof (svc[i][propiedad]) !== "boolean") {
                 // si no es boolean, muestra propiedad y nombre
-                prop.textContent = propiedad + `| ${svc[i][propiedad]}`;
+                prop.textContent = propiedad + ` : ${svc[i][propiedad]}`;
             }
             else if (typeof (svc[i][propiedad]) == "boolean") {
                 if (svc[i][propiedad] == true) {
                     //    caso boolean verdadero
-                    prop.textContent = propiedad + `| Si`;
+                    prop.textContent = propiedad + ` : Si`;
                 }
                 else {
                     //caso boolean falso
-                    prop.textContent = propiedad + `| No`;
+                    prop.textContent = propiedad + ` : No`;
                 }
             }
             //agrego clase a los li
@@ -109,7 +111,7 @@ const verCard = (n) => {
     selectedSVC = svc[n - 1];
 
     const card = document.createElement("div");
-    card.className = "svc-cardstyle";
+    card.className = "svc-cardstyle animate__animated animate__zoomIn svc-preset";
 
     const titulo = document.createElement("h2");
     titulo.className = "h2-main";
@@ -131,20 +133,38 @@ const verCard = (n) => {
                     prop.textContent = propiedad + `: No`;
                 }
             }
+            if (propiedad == 'id')
+                idaux= selectedSVC[propiedad];
             datos.append(prop);
         }
     }
+
+    const carritoLocal = JSON.parse(localStorage.getItem("carrito"));
+    const btn = document.createElement("button");
+    btn.textContent = "Agregar al carrito"
+    btn.className = "btn-card";
+    btn.addEventListener("click",() => agregaraCarrito(carritoLocal,idaux));
+
+
+    const btnElim = document.createElement("button");
+    btnElim.textContent = "Vaciar carrito"
+    btnElim.className = "btn-card";
+    btnElim.addEventListener("click",() =>vaciarCarrito ());
+
+
+    card.append(btn);
+    card.append(btnElim);
     divSvc.append(titulo);
     card.append(datos);
     divSvc.append(card);
 }
 
+//botones de ver card
 btnLP.addEventListener("click", () => verCard(1));
 btnSWI.addEventListener("click", () => verCard(2));
 btnEcomm.addEventListener("click", () => verCard(3));
-//const btnAction = () => {
-// btnInfo.addEventListener("click", verPropiedades);
-//}
+
+
 
 const nuevoServicio = () => {
     //las preguntas se reemplazan por divs con formularios o checkbox para que el usuario elija su servicio personalizado
@@ -153,7 +173,7 @@ const nuevoServicio = () => {
     //primer pregunta
 
     const formulario = document.createElement("form");
-
+    formulario.className = "svc-formstyle animate__animated animate__flipInX"
     //pregunta 1
     const preg1 = document.createElement("label");
 
@@ -164,7 +184,7 @@ const nuevoServicio = () => {
     //select 1
 
     const sel1 = document.createElement("select");
-
+    //sel1.className = "form-select"
     //opciones 
     const opcion1 = document.createElement("option");
     const opcion2 = document.createElement("option");
@@ -174,9 +194,9 @@ const nuevoServicio = () => {
     opcion2.textContent = "Sitio Web Institucional (5 páginas)";
     opcion3.textContent = "E-commerce (9 páginas)";
 
-    opcion1.className = "just-text";
-    opcion2.className = "just-text";
-    opcion3.className = "just-text";
+    opcion1.className = "just-text2";
+    opcion2.className = "just-text2";
+    opcion3.className = "just-text2";
 
     opcion1.value = "1";
     opcion2.value = "5";
@@ -241,7 +261,7 @@ const nuevoServicio = () => {
             valor -= 20;
         if (!mant)
             valor += 10;
-        agregarServicio('Tu sitio personalizado', pags, mant, valor);
+        agregarServicio('Tu sitio personalizado', 4,pags, mant, valor);
         //alert(`Tu servicio personalizado costara un total de ` + valor + ` USD. Podés consultar por las cuotas en la sección correspondiente`);
         verCard(4);
     });
@@ -252,12 +272,6 @@ const nuevoServicio = () => {
 
 btnPers.addEventListener("click", nuevoServicio);
 
-
-//funcion si el usuario decide comrpar.
-/*const servicioElegido = (tipoDeServicio) => {
-    alert(`usted ha seleccionado ${servicios[tipoDeServicio].Nombre}, cuyo valor es de ${servicios[tipoDeServicio].Precio} USD\nPara continuar, contactate a barazzuttip@gmail.com o por Whats App al +5492804637812`);
-    quiereCuotas = confirm('Desea abonar en cuotas?');
-}*/
 
 
 //const cuotas
@@ -290,6 +304,7 @@ const calcularCuotas = () => {
     //html dinamico, creo el form, label, select, options, submit
     const formulario = document.createElement("form");
     const preg = document.createElement("label");
+    formulario.className = "svc-formstyle animate__animated animate__flipInY"
 
     preg.innerHTML = "Cantidad de cuotas:";
     preg.className = "just-text";
@@ -304,9 +319,9 @@ const calcularCuotas = () => {
     opcion2.textContent = "3";
     opcion3.textContent = "6";
 
-    opcion1.className = "just-text";
-    opcion2.className = "just-text";
-    opcion3.className = "just-text";
+    opcion1.className = "just-text2";
+    opcion2.className = "just-text2";
+    opcion3.className = "just-text2";
 
     opcion1.value = "2";
     opcion2.value = "3";
@@ -333,10 +348,10 @@ const calcularCuotas = () => {
     opcion7.textContent = "Tu sitio personalizado"; //tengo que checkear si el usuario armo su sitio
 
 
-    opcion4.className = "just-text";
-    opcion5.className = "just-text";
-    opcion6.className = "just-text";
-    opcion7.className = "just-text";
+    opcion4.className = "just-text2";
+    opcion5.className = "just-text2";
+    opcion6.className = "just-text2";
+    opcion7.className = "just-text2";
 
     opcion4.value = "0";
     opcion5.value = "1";
@@ -380,3 +395,19 @@ const calcularCuotas = () => {
 }
 btnCoutas.addEventListener("click", () => calcularCuotas())
 
+
+//Manejo del carrito
+const agregaraCarrito = (micarrito,id) => {
+    const svc = JSON.parse(localStorage.getItem("servicios"));
+    const carritoLocal = JSON.parse(localStorage.getItem("carrito"));
+    const itemElegido = svc.find(item => item.id === id);
+    carritoLocal.push(itemElegido);
+    //localStorage.removeItem("carrito");
+    localStorage.setItem("carrito",JSON.stringify(carritoLocal));
+} 
+
+const vaciarCarrito = () => {
+    localStorage.removeItem("carrito");
+    const nuevoCarrito = [];
+    localStorage.setItem("carrito", JSON.stringify(nuevoCarrito));
+}

@@ -58,3 +58,22 @@
     border-bottom-right-radius: 14px;
     border-bottom-left-radius: 14px;
 }
+.btn-card {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background-color: #323232;
+    margin-left: 5px;
+    border-radius: 12px;
+    height: fit-content;
+    align-self: center;
+    border: none;
+    font-family: 'txt-font';
+    font-size: 16;
+    padding: 10px;
+    font-weight: 400;
+    color: #FFE4ED;
+    &:hover{
+        background-color: #8AF927;
+        color: #323232;
+    }
+}

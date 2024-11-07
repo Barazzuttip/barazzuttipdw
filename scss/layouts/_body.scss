@@ -15,6 +15,7 @@
     align-items: center;
     margin-bottom: 50px;
     margin-top: 54px;
+
     .cards-section-title {
         margin-bottom: 20px;
 
@@ -95,8 +96,10 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+
     a {
         width: 30%;
+
         .cont-card {
             display: flex;
             align-items: center;
@@ -104,28 +107,31 @@
             border-radius: 20px;
             width: 100%;
             transition: transform 1s ease, box-shadow 0.7s ease;
+
             &:hover {
-                transform: rotate3d(-1,1,0, 30deg) scale(1.2,1.2);
+                transform: rotate3d(-1, 1, 0, 30deg) scale(1.2, 1.2);
                 box-shadow:
                     5px 5px 2px #323232;
-    
+
             }
-    
+
             img {
                 width: 100%;
             }
         }
     }
-    
+
 }
-.svc-div{
+
+.svc-div {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 50vw;
     width: 100%;
 }
-.consultas-div{
+
+.consultas-div {
     padding-top: 10px;
     display: flex;
     flex-direction: column;
@@ -136,17 +142,54 @@
     background-color: rgba($color: #323232, $alpha: 0.5);
     border-radius: 14px;
 }
+
 .display-div {
     width: 50vw;
+    height: 60%;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-radius: 15px;
+    box-shadow:
+        2px 2px 8px wheat,
+        1px -1px 4px wheat,
+        -1px 1px 4px wheat,
+        -1px -1px 4px wheat;
 }
+
 .svc-cardstyle {
     display: flex;
     flex-direction: row;
+    //background-color: rgba($color: #323232, $alpha: 0.2);
+    //border: 2px solid #8AF927 ;
+    // box-shadow: 
+    //2px 2px 8px wheat;
+    //1px -1px 4px wheat
+    //-1px 1px 4px wheat,
+    //-1px -1px 4px wheat;
+    border-radius: 12px;
+
     ul {
         list-style-type: none;
     }
+}
+
+.svc-formstyle {
+    select {
+        border-radius: 5px;
+        background-color: transparent;
+        color: #8AF927;
+    }
+}
+
+.svc-preset {
+    box-shadow:
+        2px 2px 8px wheat,
+        2px -2px 8px wheat,
+        -2px 2px 8px wheat,
+        -2px -2px 8px wheat;
 }
