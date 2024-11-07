@@ -1,4 +1,10 @@
 @import "../layouts/texts";
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
 .bz {
     padding: 20px;

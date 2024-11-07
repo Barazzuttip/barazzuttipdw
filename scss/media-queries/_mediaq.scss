@@ -1,39 +1,45 @@
-@media only screen and (min-width:500px) and (max-width: 1300px) { 
+@media only screen and (min-width:650) and (max-width: 1300px) {
     /*******pagina de inicio*******/
     /*header*/
-   
+
 
     .header-format {
         width: 100%;
         justify-content: space-around;
-        .header-izq {
-        }
+
     }
+
     .h1-text {
         display: none;
     }
+
     .nav-visual {
         display: none;
     }
-    .drop-mq{
+
+    .drop-mq {
         display: flex;
     }
-    
+
     /*articulo ppal*/
     .h2-main {
         width: 100%;
     }
+
     .main-text1 {
         width: 100%;
     }
+
     .main-text2 {
         width: 100%;
     }
+
     .main-grid-div {
         grid-column: 1/ span 2;
         grid-row: 1;
         justify-content: start !important;
     }
+
     .main-grid-bg {
         background-position: bottom;
         background-size: 50%;
@@ -41,15 +47,17 @@
 
     /*valores*/
     .valores-style {
-       justify-content: start;
-       align-items: start;
-       width: 75%;
+        justify-content: start;
+        align-items: start;
+        width: 75%;
     }
+
     .cards-style {
         justify-content: start;
         align-items: center;
         width: 50%;
     }
+
     .card-txt {
         display: none;
     }
@@ -58,116 +66,164 @@
     /*footer*/
     .footer-format {
         justify-content: space-around;
-    
+        margin-top: 150px;
+
         .footer-izq {
             display: none;
         }
+
         .footer-logo {
             width: 20%;
             height: 20%;
         }
     }
+
     /************/
     /*barazzutti*/
     /************/
     .bz-img {
         display: none;
     }
+
     .bz-img-cont {
         display: none;
     }
+
     .grid-cont-bz {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(4,0.5fr);
+        grid-template-rows: repeat(4, 0.5fr);
+
         .grid1-2 {
             grid-row: 1;
             grid-column: 1;
         }
+
         .grid1-1 {
             grid-row: 2;
         }
     }
-    .portaf{
+
+    .portaf {
         flex-direction: column;
     }
-    
+
     .bz-img {
         display: none;
     }
+
     .bz-img2 {
         display: flex !important;
     }
+
     .contacto {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+
         a {
             width: 40%;
             display: flex;
             justify-content: space-around;
         }
     }
-    body, html {
+
+    body,
+    html {
         /*background-image: url(../../assets/portafolios-bg-mbl.png) !important;*/
         background-size: cover;
         background-position: top center;
     }
+
+    body {
+        height: 100vw;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .buttons {
+        width: 100%;
+    }
+
+    .btn-svc {
+        font-size: 18px;
+    }
+
+    .svc-div {
+        flex-direction: column;
+    }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 650px) {
+
     /*******pagina de inicio*******/
     /*header*/
+
     .header-format {
         width: 100%;
         justify-content: space-around;
-        .header-izq {
-        }
+
     }
+
+    .svc-div {
+        flex-direction: column;
+    }
+
     .h1-text {
         display: none;
     }
+
     .nav-visual {
         display: none;
     }
-    .drop-mq{
+
+    .drop-mq {
         display: flex;
     }
-    
+
     /*articulo ppal*/
     .h2-main {
         width: 100%;
     }
+
     .main-text1 {
         width: 100%;
     }
+
     .main-text2 {
         width: 100%;
     }
+
     .main-grid-div {
         grid-column: 1/ span 2;
         grid-row: 1;
         justify-content: start !important;
     }
+
     .main-grid-bg {
         background-position: bottom;
         background-size: 50%;
     }
+
     .main-btn {
         width: 30%;
     }
+
     /*valores*/
     .valores-style {
-       justify-content: start;
-       align-items: start;
-       width: 100%;
+        justify-content: start;
+        align-items: start;
+        width: 100%;
     }
+
     .cards-style {
         justify-content: start;
         align-items: center;
         width: 50%;
         margin: 5px;
     }
+
     .card-txt {
         display: none;
     }
@@ -176,10 +232,13 @@
     /*footer*/
     .footer-format {
         justify-content: space-around;
-    
+        align-self: end;
+        margin-bottom: 0;
+        margin-top: 350px;
         .footer-izq {
             display: none;
         }
+
         .footer-logo {
             width: 30%;
             height: 30%;
@@ -187,36 +246,42 @@
     }
 
     /*****SERVICIOS*****/
-    
+
     .svcards {
         flex-direction: column;
         align-items: center;
     }
 
 
+
+
     /************/
     /*barazzutti*/
     /************/
-   
+
     .grid-cont-bz {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(4,0.5fr);
+        grid-template-rows: repeat(4, 0.5fr);
+
         .grid1-2 {
             grid-row: 1;
             grid-column: 1;
         }
+
         .grid1-1 {
             grid-row: 2;
         }
     }
-    .portaf{
+
+    .portaf {
         flex-direction: column;
     }
-     
+
     .bz-img {
         display: none;
     }
+
     .bz-img2 {
         display: flex !important;
     }
@@ -227,15 +292,30 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+
         a {
             width: 50%;
             display: flex;
             justify-content: space-around;
         }
     }
-    body, html {
-       /* background-image: url(../assets/portafolios-bg-mbl.png) !important;*/
+
+    body,
+    html {
+        /* background-image: url(../assets/portafolios-bg-mbl.png) !important;*/
         background-size: auto;
         background-repeat: repeat;
+    }
+    .svc-div {
+        margin-top: 350px;
+        .display-div {
+            margin-top: 100px;
+            height: 120%;
+            width: 100%;
+        }
+    }
+    .svc-preset{
+        box-shadow: none;
+        
     }
 }
