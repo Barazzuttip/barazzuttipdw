@@ -12,6 +12,7 @@ const btnSWI = document.getElementById("btn-swi");
 const btnEcomm = document.getElementById("btn-ecomm");
 const btnCoutas = document.getElementById("btn-cuotas");
 const btnPers = document.getElementById("btn-pers");
+const btnCarr = document.getElementById("btn-verCarr");
 
 
 const divSvc = document.getElementById("svc-display-div");
@@ -52,9 +53,9 @@ agregarServicio('E-commerce', 3, 9, true, precioEcomm);
 
 //funcion para ver las propiedades de un servicio
 
-function verPropiedades() {
+function verPropiedades(tit,array) {
     //extraigo del localStorage el array de Servicios
-    const svc = JSON.parse(localStorage.getItem("servicios"));
+    const svc = array;
 
     //vacio el container de las cards
     divSvc.innerHTML = "";
@@ -66,7 +67,7 @@ function verPropiedades() {
 
     //titulo
     titleInfo = document.createElement("h2");
-    titleInfo.innerHTML = "Tipos de páginas";
+    titleInfo.innerHTML = tit;
     titleInfo.className = "h2-main";
 
     divSvc.append(titleInfo);
@@ -99,7 +100,7 @@ function verPropiedades() {
         svcCard.append(svcItem);
     }
 }
-btnInfo.addEventListener('click', verPropiedades);
+btnInfo.addEventListener('click', () => verPropiedades("Tipos de páginas", JSON.parse(localStorage.getItem("servicios"))));
 
 
 //para ver cada card
@@ -411,3 +412,5 @@ const vaciarCarrito = () => {
     const nuevoCarrito = [];
     localStorage.setItem("carrito", JSON.stringify(nuevoCarrito));
 }
+
+btnCarr.addEventListener("click",() => verPropiedades("Mi Carrito",JSON.parse(localStorage.getItem("carrito"))));
