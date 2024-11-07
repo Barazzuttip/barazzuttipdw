@@ -6,7 +6,8 @@
     margin: 10px;
     padding: 5px;
     justify-content: center;
-    width: 15%;
+    width: fit-content;
+    justify-self: center;
     text-align: center;
     background-color: #151515;
     box-shadow:
@@ -33,3 +34,27 @@
     color: #FFE4ED !important;
 }
 
+.buttons {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.btn-svc{
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background-color: transparent;
+    border: none;
+    font-family: 'txt-font';
+    font-size: 24px;
+    font-weight: 400;
+    color: #FFE4ED;
+    &:hover{
+        background-color: #8AF927;
+        color: #323232;
+    }
+}
+.btn-last{
+    border-bottom-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+}

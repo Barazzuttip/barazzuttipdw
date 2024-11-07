@@ -69,7 +69,7 @@ html, body {
 
 .h2-main, .valores-div .cards-section-title .cst-name {
   font-size: 1.5rem;
-  font-family: "Metrophobic";
+  font-family: "MergeOne";
   width: 100%;
   color: #8AF927;
   text-align: center;
@@ -180,7 +180,7 @@ html, body {
 
 .h2-main, .valores-div .cards-section-title .cst-name {
   font-size: 1.5rem;
-  font-family: "Metrophobic";
+  font-family: "MergeOne";
   width: 100%;
   color: #8AF927;
   text-align: center;
@@ -246,7 +246,7 @@ html, body {
 
 .h2-main, .valores-div .cards-section-title .cst-name {
   font-size: 1.5rem;
-  font-family: "Metrophobic";
+  font-family: "MergeOne";
   width: 100%;
   color: #8AF927;
   text-align: center;
@@ -403,6 +403,40 @@ html, body {
   width: 100%;
 }
 
+.svc-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vw;
+  width: 100%;
+}
+
+.consultas-div {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  background-color: rgba(50, 50, 50, 0.5);
+  border-radius: 14px;
+}
+
+.display-div {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.svc-cardstyle {
+  display: flex;
+  flex-direction: row;
+}
+.svc-cardstyle ul {
+  list-style-type: none;
+}
+
 .main-grid {
   display: grid; /*grilla principal de la pagina*/
   grid-template-columns: 1fr; /*filas y columnas*/
@@ -542,7 +576,8 @@ html, body {
   margin: 10px;
   padding: 5px;
   justify-content: center;
-  width: 15%;
+  width: fit-content;
+  justify-self: center;
   text-align: center;
   background-color: #151515;
   box-shadow: 4px 4px 3px #000000;
@@ -568,6 +603,31 @@ html, body {
   color: #FFE4ED !important;
 }
 
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-svc {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  background-color: transparent;
+  border: none;
+  font-family: "txt-font";
+  font-size: 24px;
+  font-weight: 400;
+  color: #FFE4ED;
+}
+.btn-svc:hover {
+  background-color: #8AF927;
+  color: #323232;
+}
+
+.btn-last {
+  border-bottom-right-radius: 14px;
+  border-bottom-left-radius: 14px;
+}
+
 .h1-text {
   color: #8AF927;
   font-family: "Metrophobic";
@@ -580,7 +640,7 @@ html, body {
 
 .h2-main, .valores-div .cards-section-title .cst-name {
   font-size: 1.5rem;
-  font-family: "Metrophobic";
+  font-family: "MergeOne";
   width: 100%;
   color: #8AF927;
   text-align: center;
