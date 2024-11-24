@@ -1,201 +1,198 @@
 @import "../layouts/texts";
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .bz {
-    padding: 20px;
+  padding: 20px;
 
-    h2 {
-        text-align: center;
-    }
+  h2 {
+    text-align: center;
+  }
 }
 
 .valores-div {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    margin-bottom: 50px;
-    margin-top: 54px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 54px;
 
-    .cards-section-title {
-        margin-bottom: 20px;
+  .cards-section-title {
+    margin-bottom: 20px;
 
-        .cst-name {
-            @extend .h2-main;
-            width: 100%;
-        }
+    .cst-name {
+      @extend .h2-main;
+      width: 100%;
     }
+  }
 }
 
 .valores-style {
-    display: flex;
+  display: flex;
 }
 
 .bz-layout {
+  display: flex;
+  justify-content: end;
+
+  .bz-info {
+    width: 100%;
     display: flex;
-    justify-content: end;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+  }
 
-    .bz-info {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: start;
+  .bz-img-cont {
+    display: flex;
+    justify-content: start;
+    width: 50%;
+
+    .bz-img {
+      width: 100%;
     }
 
-    .bz-img-cont {
-        display: flex;
-        justify-content: start;
-        width: 50%;
-
-        .bz-img {
-            width: 100%;
-        }
-
-        .bz-img2 {
-            display: none;
-            width: 100%;
-        }
+    .bz-img2 {
+      display: none;
+      width: 100%;
     }
-
+  }
 }
 
 .certif {
-    margin: 15px;
-    border: 5px double #8AF927;
-    border-radius: 25px;
-    width: fit-content;
-    height: 105%;
-    box-shadow:
-        4px 4px 2px #000000;
+  margin: 15px;
+  border: 5px double #8af927;
+  border-radius: 25px;
+  width: fit-content;
+  height: 105%;
+  box-shadow: 4px 4px 2px #000000;
 }
 
 .portaf {
-    display: flex;
+  display: flex;
 }
 
 .faq {
-    background-color: transparent;
-    padding: 100px;
+  background-color: transparent;
+  padding: 100px;
 
-    .faq-acc {
-        margin: 30px;
-        border-radius: 10px;
-        box-shadow:
-            5px 5px #8AF927,
-            -5px -5px #5c9f24;
-    }
+  .faq-acc {
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow:
+      5px 5px #8af927,
+      -5px -5px #5c9f24;
+  }
 }
 
 .contacto {
-    background-image: url('https://www.fundacionsantillana.com/wp-content/uploads/2022/08/banner-contato-newsletter.jpg.webp');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    /*background-color: #323232;*/
-    height: 700px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+  background-image: url("https://www.fundacionsantillana.com/wp-content/uploads/2022/08/banner-contato-newsletter.jpg.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /*background-color: #323232;*/
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 
-    a {
-        width: 30%;
+  a {
+    width: 30%;
 
-        .cont-card {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 20px;
-            width: 100%;
-            transition: transform 1s ease, box-shadow 0.7s ease;
+    .cont-card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 20px;
+      width: 100%;
+      transition:
+        transform 1s ease,
+        box-shadow 0.7s ease;
 
-            &:hover {
-                transform: rotate3d(-1, 1, 0, 30deg) scale(1.2, 1.2);
-                box-shadow:
-                    5px 5px 2px #323232;
+      &:hover {
+        transform: rotate3d(-1, 1, 0, 30deg) scale(1.2, 1.2);
+        box-shadow: 5px 5px 2px #323232;
+      }
 
-            }
-
-            img {
-                width: 100%;
-            }
-        }
+      img {
+        width: 100%;
+      }
     }
-
+  }
 }
 
 .svc-div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50vw;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vw;
+  width: 100%;
 }
 
 .consultas-div {
-    padding-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: fit-content;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
 
-    //estilo
-    background-color: rgba($color: #323232, $alpha: 0.5);
-    border-radius: 14px;
+  //estilo
+  background-color: rgba($color: #323232, $alpha: 0.5);
+  border-radius: 14px;
 }
 
 .display-div {
-    width: 50vw;
-    height: 60%;
-    margin-left: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 15px;
-    box-shadow:
-        2px 2px 8px wheat,
-        1px -1px 4px wheat,
-        -1px 1px 4px wheat,
-        -1px -1px 4px wheat;
+  width: 50vw;
+  height: 60%;
+  margin-left: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  box-shadow:
+    2px 2px 8px wheat,
+    1px -1px 4px wheat,
+    -1px 1px 4px wheat,
+    -1px -1px 4px wheat;
 }
 
 .svc-cardstyle {
-    display: flex;
-    flex-direction: row;
-    //background-color: rgba($color: #323232, $alpha: 0.2);
-    //border: 2px solid #8AF927 ;
-    // box-shadow: 
-    //2px 2px 8px wheat;
-    //1px -1px 4px wheat
-    //-1px 1px 4px wheat,
-    //-1px -1px 4px wheat;
-    border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  //background-color: rgba($color: #323232, $alpha: 0.2);
+  //border: 2px solid #8AF927 ;
+  // box-shadow:
+  //2px 2px 8px wheat;
+  //1px -1px 4px wheat
+  //-1px 1px 4px wheat,
+  //-1px -1px 4px wheat;
+  border-radius: 12px;
 
-    ul {
-        list-style-type: none;
-    }
+  ul {
+    list-style-type: none;
+  }
 }
 
 .svc-formstyle {
-    select {
-        border-radius: 5px;
-        background-color: transparent;
-        color: #8AF927;
-    }
+  select {
+    border-radius: 5px;
+    background-color: transparent;
+    color: #8af927;
+  }
 }
 
 .svc-preset {
-    box-shadow:
-        2px 2px 8px wheat,
-        2px -2px 8px wheat,
-        -2px 2px 8px wheat,
-        -2px -2px 8px wheat;
+  box-shadow:
+    2px 2px 8px wheat,
+    2px -2px 8px wheat,
+    -2px 2px 8px wheat,
+    -2px -2px 8px wheat;
 }

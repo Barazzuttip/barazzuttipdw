@@ -1,148 +1,144 @@
-@import '../layouts/texts';
+@import "../layouts/texts";
 
 .cards-style {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba($color: #323232, $alpha: 0.8) !important;
+  box-shadow: 4px 4px 2px #000000;
+  margin-left: 25px;
+  margin-right: 25px;
+  height: fit-content !important;
+  .img-card {
+    width: 48px;
+    background-color: #8af927;
+    border: 10px double #323232;
+    opacity: 100%;
+    border-radius: 10px;
+    padding: 5px;
+  }
+
+  .card-body-style {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba($color: #323232, $alpha: 0.8) !important;
-    box-shadow: 
-    4px 4px 2px #000000;
-    margin-left: 25px;
-    margin-right: 25px;
-    height: fit-content !important;
-    .img-card {
-        width: 48px;
-        background-color: #8AF927;
-        border: 10px double #323232;
-        opacity: 100%;
-        border-radius: 10px;
-        padding: 5px;
+    margin: 5px;
+    .card-title {
+      font-family: "MergeOne";
+    }
+    .card-txt {
+      text-align: center;
+      font-family: "txt-font";
     }
 
-    .card-body-style {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 5px;
-        .card-title{
-        font-family: 'MergeOne';
-        }
-        .card-txt {
-            text-align: center;
-            font-family: 'txt-font';
-        }
-
-        .svcard-t {
-            font-family: 'MergeOne';
-            font-size: 2rem;
-            color: #FFE4ED;
-            text-align: center;
-        }
-
-        .svcard-subt,
-        h4 {
-            font-family: 'Metrophobic';
-            margin: 5px;
-            font-size: 1.5rem;
-            color: #8AF927;
-        }
-
-        p,
-        ul {
-            color: #FFE4ED;
-            margin: 5px;
-            text-align: start;
-        }
+    .svcard-t {
+      font-family: "MergeOne";
+      font-size: 2rem;
+      color: #ffe4ed;
+      text-align: center;
     }
+
+    .svcard-subt,
+    h4 {
+      font-family: "Metrophobic";
+      margin: 5px;
+      font-size: 1.5rem;
+      color: #8af927;
+    }
+
+    p,
+    ul {
+      color: #ffe4ed;
+      margin: 5px;
+      text-align: start;
+    }
+  }
 }
 
 .card-link {
-    font-size: 18px;
-    font-family: 'MergeOne' !important;
-    font-weight: normal;
-    text-decoration: underline !important;
-    text-decoration-thickness: 1px !important;
-    color: #8AF927 !important;
-    border-radius: 8px;
-    background-color: transparent !important;
-    border: none !important;
-    
-    padding: 5px;
-    transition: box-shadow 0.5s ease,
+  font-size: 18px;
+  font-family: "MergeOne" !important;
+  font-weight: normal;
+  text-decoration: underline !important;
+  text-decoration-thickness: 1px !important;
+  color: #8af927 !important;
+  border-radius: 8px;
+  background-color: transparent !important;
+  border: none !important;
+
+  padding: 5px;
+  transition:
+    box-shadow 0.5s ease,
     transform 0.5s ease !important;
 
-    &:hover {
-        color: #FFE4ED !important;
-        background-color: transparent;
-        transform: scale(1.1, 1.1);
-        box-shadow:
-            3px 3px 3px #8AF927;
-    }
-    .svcard-img {
-        width: 48px;
-        height: auto;
-        color: #FFE4ED;
-        margin-right: 6px;
-    }
-
-    
-
+  &:hover {
+    color: #ffe4ed !important;
+    background-color: transparent;
+    transform: scale(1.1, 1.1);
+    box-shadow: 3px 3px 3px #8af927;
+  }
+  .svcard-img {
+    width: 48px;
+    height: auto;
+    color: #ffe4ed;
+    margin-right: 6px;
+  }
 }
 
 .svcards {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    display: flex;
-    justify-content: space-around;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .bz-card {
-    margin-top: 25px;
-    margin-left: 25px;
+  margin-top: 25px;
+  margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .bz-card-img {
+    width: 256px;
+    height: 154px;
+    object-fit: cover;
+    object-position: top;
+    box-shadow:
+      3px 3px 0 #8af927,
+      -3px -3px 0 #5c9f24;
+    transition:
+      transform 0.5s ease,
+      box-shadow 0.5s ease;
+    /*border: 4px double #FEACC6;*/
+    border-radius: 25px;
+  }
+
+  .bz-card-img:hover {
+    box-shadow: 3px 3px 12px #000000;
+    transform: scale(1.1, 1.1);
+  }
+
+  .bz-card-body {
     display: flex;
+    background-color: rgba($color: #323232, $alpha: 0.5);
     flex-direction: column;
-    align-items: center;
+    align-items: start;
+    text-align: start;
+    margin-top: 25px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 12px#000000;
 
-    .bz-card-img {
-        width: 256px;
-        height: 154px;
-        object-fit: cover;
-        object-position: top;
-        box-shadow:
-            3px 3px 0 #8AF927,
-            -3px -3px 0 #5c9f24;
-        transition: transform 0.5s ease, box-shadow 0.5s ease;
-        /*border: 4px double #FEACC6;*/
-        border-radius: 25px;
+    h3 {
+      font-size: 24px;
+      text-align: start;
     }
 
-    .bz-card-img:hover {
-        box-shadow:
-            3px 3px 12px #000000;
-        transform: scale(1.1, 1.1);
+    p {
+      color: #ffe4ed;
+      font-size: 16px;
+      margin-bottom: 10px;
     }
-
-    .bz-card-body {
-        display: flex;
-        background-color: rgba($color: #323232, $alpha: 0.5);
-        flex-direction: column;
-        align-items: start;
-        text-align: start;
-        margin-top: 25px;
-        padding: 5px;
-        border-radius: 10px;
-        box-shadow: 
-        4px 4px 12px#000000;
-
-        h3 {
-            font-size: 24px;
-            text-align: start;
-        }
-
-        p {
-            color: #FFE4ED;
-            font-size: 16px;
-            margin-bottom: 10px;
-        }
-    }
+  }
 }

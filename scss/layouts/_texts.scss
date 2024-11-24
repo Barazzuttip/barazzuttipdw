@@ -1,70 +1,67 @@
 .h1-text {
-    color: #8AF927;
-    font-family: 'Metrophobic';
-    font-size: 1.5rem;
-    text-align: center;
-    /*text-shadow:
+  color: #8af927;
+  font-family: "Metrophobic";
+  font-size: 1.5rem;
+  text-align: center;
+  /*text-shadow:
         1px 0 0 #ec6892,
         -1px 0 0 #FFE4ED;*/
 }
 .h2-main {
-    font-size: 1.5rem;
-    font-family: 'MergeOne';
-    width: 100%;
-    color: #8AF927;
-    text-align: center;
-    text-shadow:
-        2px 2px 3px #000000;
- }
-.main-text1 {
-    display: flex;
-    width: 75%;
-    margin: 5px;
-    color: #FFE4ED;
+  font-size: 1.5rem;
+  font-family: "MergeOne";
+  width: 100%;
+  color: #8af927;
+  text-align: center;
+  text-shadow: 2px 2px 3px #000000;
 }
-.main-text2{
-    width: 75%;
-    color: #FFE4ED;
+.main-text1 {
+  display: flex;
+  width: 75%;
+  margin: 5px;
+  color: #ffe4ed;
+}
+.main-text2 {
+  width: 75%;
+  color: #ffe4ed;
 }
 .highlight {
-    color: #FFE4ED;
+  color: #ffe4ed;
 }
 .link-dec {
-    color: #FFE4ED;
-    font-family: 'Metrophobic';
-    font-size: 16px;
-    font-weight: lighter;
-    text-decoration: none;
+  color: #ffe4ed;
+  font-family: "Metrophobic";
+  font-size: 16px;
+  font-weight: lighter;
+  text-decoration: none;
 }
 .title-h4 {
-    color: #323232;
-    padding: 5px;
-    border-radius: 10px;
-    background-color: rgba($color: #8AF927, $alpha: 1);
-    font-size: 20px;
-    font-family: 'Metrophobic';
-    margin-top: 15px;
-    box-shadow: 
-    3px 3px 12px #000000;
-    /*animation: floating 4s ease infinite;*/
+  color: #323232;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgba($color: #8af927, $alpha: 1);
+  font-size: 20px;
+  font-family: "Metrophobic";
+  margin-top: 15px;
+  box-shadow: 3px 3px 12px #000000;
+  /*animation: floating 4s ease infinite;*/
 }
 .just-text {
-    font-size: 16px;
-    font-family: 'txt-font';
-    font-weight: 500;
-    color: #FFE4ED;
-    margin: 5px;
-    padding: 5px;
-    border-radius: 10px;
-    /*background-color: rgba($color: #323232, $alpha: 0.5)*/;
+  font-size: 16px;
+  font-family: "txt-font";
+  font-weight: 500;
+  color: #ffe4ed;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  /*background-color: rgba($color: #323232, $alpha: 0.5)*/
 }
 .just-text2 {
-    font-size: 16px;
-    font-family: 'txt-font';
-    font-weight: 500;
-    color: #323232;
-    margin: 5px;
-    padding: 5px;
-    border-radius: 10px;;
-    
+  font-size: 16px;
+  font-family: "txt-font";
+  font-weight: 500;
+  color: #323232;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
 }

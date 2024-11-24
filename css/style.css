@@ -38,7 +38,8 @@
   width: 100%;
 }
 
-html, body {
+html,
+body {
   background-image: url("../assets/bg-gif4.gif");
   background-position: top left;
   background-repeat: no-repeat;
@@ -58,7 +59,7 @@ html, body {
 }
 
 .h1-text {
-  color: #8AF927;
+  color: #8af927;
   font-family: "Metrophobic";
   font-size: 1.5rem;
   text-align: center;
@@ -67,11 +68,12 @@ html, body {
       -1px 0 0 #FFE4ED;*/
 }
 
-.h2-main, .valores-div .cards-section-title .cst-name {
+.h2-main,
+.valores-div .cards-section-title .cst-name {
   font-size: 1.5rem;
   font-family: "MergeOne";
   width: 100%;
-  color: #8AF927;
+  color: #8af927;
   text-align: center;
   text-shadow: 2px 2px 3px #000000;
 }
@@ -80,20 +82,21 @@ html, body {
   display: flex;
   width: 75%;
   margin: 5px;
-  color: #FFE4ED;
+  color: #ffe4ed;
 }
 
 .main-text2 {
   width: 75%;
-  color: #FFE4ED;
+  color: #ffe4ed;
 }
 
 .highlight {
-  color: #FFE4ED;
+  color: #ffe4ed;
 }
 
-.link-dec, .header-format .header-der .lista-nav .nav-item a {
-  color: #FFE4ED;
+.link-dec,
+.header-format .header-der .lista-nav .nav-item a {
+  color: #ffe4ed;
   font-family: "Metrophobic";
   font-size: 16px;
   font-weight: lighter;
@@ -116,7 +119,7 @@ html, body {
   font-size: 16px;
   font-family: "txt-font";
   font-weight: 500;
-  color: #FFE4ED;
+  color: #ffe4ed;
   margin: 5px;
   padding: 5px;
   border-radius: 10px;
@@ -142,7 +145,11 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(to bottom, rgba(21, 21, 21, 0.7), rgba(50, 50, 50, 0.7));
+  background-image: linear-gradient(
+    to bottom,
+    rgba(21, 21, 21, 0.7),
+    rgba(50, 50, 50, 0.7)
+  );
 }
 .header-format .header-izq {
   background-color: transparent;
@@ -174,12 +181,12 @@ html, body {
   transition: transform 0.5s ease;
 }
 .header-format .header-der .lista-nav .nav-item:hover {
-  box-shadow: 3px 3px 3px #8AF927;
+  box-shadow: 3px 3px 3px #8af927;
   transform: scale(1.1, 1.1);
 }
 
 .h1-text {
-  color: #8AF927;
+  color: #8af927;
   font-family: "Metrophobic";
   font-size: 1.5rem;
   text-align: center;
@@ -188,11 +195,12 @@ html, body {
       -1px 0 0 #FFE4ED;*/
 }
 
-.h2-main, .valores-div .cards-section-title .cst-name {
+.h2-main,
+.valores-div .cards-section-title .cst-name {
   font-size: 1.5rem;
   font-family: "MergeOne";
   width: 100%;
-  color: #8AF927;
+  color: #8af927;
   text-align: center;
   text-shadow: 2px 2px 3px #000000;
 }
@@ -201,20 +209,21 @@ html, body {
   display: flex;
   width: 75%;
   margin: 5px;
-  color: #FFE4ED;
+  color: #ffe4ed;
 }
 
 .main-text2 {
   width: 75%;
-  color: #FFE4ED;
+  color: #ffe4ed;
 }
 
 .highlight {
-  color: #FFE4ED;
+  color: #ffe4ed;
 }
 
-.link-dec, .header-format .header-der .lista-nav .nav-item a {
-  color: #FFE4ED;
+.link-dec,
+.header-format .header-der .lista-nav .nav-item a {
+  color: #ffe4ed;
   font-family: "Metrophobic";
   font-size: 16px;
   font-weight: lighter;
@@ -237,7 +246,7 @@ html, body {
   font-size: 16px;
   font-family: "txt-font";
   font-weight: 500;
-  color: #FFE4ED;
+  color: #ffe4ed;
   margin: 5px;
   padding: 5px;
   border-radius: 10px;
@@ -255,7 +264,7 @@ html, body {
 }
 
 .h1-text {
-  color: #8AF927;
+  color: #8af927;
   font-family: "Metrophobic";
   font-size: 1.5rem;
   text-align: center;
@@ -264,11 +273,12 @@ html, body {
       -1px 0 0 #FFE4ED;*/
 }
 
-.h2-main, .valores-div .cards-section-title .cst-name {
+.h2-main,
+.valores-div .cards-section-title .cst-name {
   font-size: 1.5rem;
   font-family: "MergeOne";
   width: 100%;
-  color: #8AF927;
+  color: #8af927;
   text-align: center;
   text-shadow: 2px 2px 3px #000000;
 }
@@ -277,20 +287,21 @@ html, body {
   display: flex;
   width: 75%;
   margin: 5px;
-  color: #FFE4ED;
+  color: #ffe4ed;
 }
 
 .main-text2 {
   width: 75%;
-  color: #FFE4ED;
+  color: #ffe4ed;
 }
 
 .highlight {
-  color: #FFE4ED;
+  color: #ffe4ed;
 }
 
-.link-dec, .header-format .header-der .lista-nav .nav-item a {
-  color: #FFE4ED;
+.link-dec,
+.header-format .header-der .lista-nav .nav-item a {
+  color: #ffe4ed;
   font-family: "Metrophobic";
   font-size: 16px;
   font-weight: lighter;
@@ -313,7 +324,7 @@ html, body {
   font-size: 16px;
   font-family: "txt-font";
   font-weight: 500;
-  color: #FFE4ED;
+  color: #ffe4ed;
   margin: 5px;
   padding: 5px;
   border-radius: 10px;
@@ -389,7 +400,7 @@ body {
 
 .certif {
   margin: 15px;
-  border: 5px double #8AF927;
+  border: 5px double #8af927;
   border-radius: 25px;
   width: fit-content;
   height: 105%;
@@ -407,7 +418,9 @@ body {
 .faq .faq-acc {
   margin: 30px;
   border-radius: 10px;
-  box-shadow: 5px 5px #8AF927, -5px -5px #5c9f24;
+  box-shadow:
+    5px 5px #8af927,
+    -5px -5px #5c9f24;
 }
 
 .contacto {
@@ -430,7 +443,9 @@ body {
   justify-content: center;
   border-radius: 20px;
   width: 100%;
-  transition: transform 1s ease, box-shadow 0.7s ease;
+  transition:
+    transform 1s ease,
+    box-shadow 0.7s ease;
 }
 .contacto a .cont-card:hover {
   transform: rotate3d(-1, 1, 0, 30deg) scale(1.2, 1.2);
@@ -465,11 +480,15 @@ body {
   padding-left: 10px;
   padding-right: 10px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   border-radius: 15px;
-  box-shadow: 2px 2px 8px wheat, 1px -1px 4px wheat, -1px 1px 4px wheat, -1px -1px 4px wheat;
+  box-shadow:
+    2px 2px 8px wheat,
+    1px -1px 4px wheat,
+    -1px 1px 4px wheat,
+    -1px -1px 4px wheat;
 }
 
 .svc-cardstyle {
@@ -484,11 +503,15 @@ body {
 .svc-formstyle select {
   border-radius: 5px;
   background-color: transparent;
-  color: #8AF927;
+  color: #8af927;
 }
 
 .svc-preset {
-  box-shadow: 2px 2px 8px wheat, 2px -2px 8px wheat, -2px 2px 8px wheat, -2px -2px 8px wheat;
+  box-shadow:
+    2px 2px 8px wheat,
+    2px -2px 8px wheat,
+    -2px 2px 8px wheat,
+    -2px -2px 8px wheat;
 }
 
 .main-grid {
@@ -542,7 +565,11 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 0;
-  background-image: linear-gradient(to bottom, rgba(50, 50, 50, 0.7), rgba(21, 21, 21, 0.7));
+  background-image: linear-gradient(
+    to bottom,
+    rgba(50, 50, 50, 0.7),
+    rgba(21, 21, 21, 0.7)
+  );
 }
 .footer-format .footer-logo {
   width: 10%;
@@ -559,7 +586,7 @@ body {
 }
 .footer-format .footer-izq .form-data label {
   margin: 5px;
-  color: #FFE4ED;
+  color: #ffe4ed;
   font-family: "kodchasan-medium";
 }
 .footer-format .footer-izq .form-data input {
@@ -572,7 +599,7 @@ body {
   align-items: center;
 }
 .footer-format .footer-izq .form-input label {
-  color: #FFE4ED;
+  color: #ffe4ed;
   font-family: "kodchasan-medium";
 }
 .footer-format .footer-izq .form-input .txt-input {
@@ -585,7 +612,7 @@ body {
   margin: 5px;
   padding: 5px;
   border-radius: 10px;
-  background-color: #FFE4ED;
+  background-color: #ffe4ed;
   color: #151515;
   font-family: "kodchasan-medium";
   font-size: 14px;
@@ -599,7 +626,7 @@ body {
   margin-right: 25px;
 }
 .footer-format .footer-der h5 {
-  color: #8AF927;
+  color: #8af927;
   font-size: 18px;
 }
 .footer-format .footer-der ul {
@@ -608,7 +635,7 @@ body {
 .footer-format .footer-der ul li {
   margin: 0;
   padding: 5px;
-  color: #FFE4ED;
+  color: #ffe4ed;
 }
 .footer-format .footer-der ul li img {
   margin-right: 10px;
@@ -616,7 +643,7 @@ body {
 }
 .footer-format .footer-der ul li a {
   text-decoration: none;
-  color: #FFE4ED;
+  color: #ffe4ed;
 }
 .footer-format .footer-der .img-footer {
   width: 24px;
@@ -636,7 +663,7 @@ body {
   background-color: #151515;
   box-shadow: 4px 4px 3px #000000;
   border-radius: 5px;
-  color: #8AF927;
+  color: #8af927;
   /*@extend formato de texto para el boton*/
 }
 
@@ -654,7 +681,7 @@ body {
   background-image: linear-gradient(to bottom, #151515, #323232) !important;
   box-shadow: 4px 4px 3px #000000;
   border-radius: 5px;
-  color: #FFE4ED !important;
+  color: #ffe4ed !important;
 }
 
 .buttons {
@@ -670,10 +697,10 @@ body {
   font-family: "txt-font";
   font-size: 24px;
   font-weight: 400;
-  color: #FFE4ED;
+  color: #ffe4ed;
 }
 .btn-svc:hover {
-  background-color: #8AF927;
+  background-color: #8af927;
   color: #323232;
 }
 
@@ -695,15 +722,15 @@ body {
   font-size: 16;
   padding: 10px;
   font-weight: 400;
-  color: #FFE4ED;
+  color: #ffe4ed;
 }
 .btn-card:hover {
-  background-color: #8AF927;
+  background-color: #8af927;
   color: #323232;
 }
 
 .h1-text {
-  color: #8AF927;
+  color: #8af927;
   font-family: "Metrophobic";
   font-size: 1.5rem;
   text-align: center;
@@ -712,11 +739,12 @@ body {
       -1px 0 0 #FFE4ED;*/
 }
 
-.h2-main, .valores-div .cards-section-title .cst-name {
+.h2-main,
+.valores-div .cards-section-title .cst-name {
   font-size: 1.5rem;
   font-family: "MergeOne";
   width: 100%;
-  color: #8AF927;
+  color: #8af927;
   text-align: center;
   text-shadow: 2px 2px 3px #000000;
 }
@@ -725,20 +753,21 @@ body {
   display: flex;
   width: 75%;
   margin: 5px;
-  color: #FFE4ED;
+  color: #ffe4ed;
 }
 
 .main-text2 {
   width: 75%;
-  color: #FFE4ED;
+  color: #ffe4ed;
 }
 
 .highlight {
-  color: #FFE4ED;
+  color: #ffe4ed;
 }
 
-.link-dec, .header-format .header-der .lista-nav .nav-item a {
-  color: #FFE4ED;
+.link-dec,
+.header-format .header-der .lista-nav .nav-item a {
+  color: #ffe4ed;
   font-family: "Metrophobic";
   font-size: 16px;
   font-weight: lighter;
@@ -761,7 +790,7 @@ body {
   font-size: 16px;
   font-family: "txt-font";
   font-weight: 500;
-  color: #FFE4ED;
+  color: #ffe4ed;
   margin: 5px;
   padding: 5px;
   border-radius: 10px;
@@ -790,7 +819,7 @@ body {
 }
 .cards-style .img-card {
   width: 48px;
-  background-color: #8AF927;
+  background-color: #8af927;
   border: 10px double #323232;
   opacity: 100%;
   border-radius: 10px;
@@ -812,7 +841,7 @@ body {
 .cards-style .card-body-style .svcard-t {
   font-family: "MergeOne";
   font-size: 2rem;
-  color: #FFE4ED;
+  color: #ffe4ed;
   text-align: center;
 }
 .cards-style .card-body-style .svcard-subt,
@@ -820,11 +849,11 @@ body {
   font-family: "Metrophobic";
   margin: 5px;
   font-size: 1.5rem;
-  color: #8AF927;
+  color: #8af927;
 }
 .cards-style .card-body-style p,
 .cards-style .card-body-style ul {
-  color: #FFE4ED;
+  color: #ffe4ed;
   margin: 5px;
   text-align: start;
 }
@@ -835,23 +864,25 @@ body {
   font-weight: normal;
   text-decoration: underline !important;
   text-decoration-thickness: 1px !important;
-  color: #8AF927 !important;
+  color: #8af927 !important;
   border-radius: 8px;
   background-color: transparent !important;
   border: none !important;
   padding: 5px;
-  transition: box-shadow 0.5s ease, transform 0.5s ease !important;
+  transition:
+    box-shadow 0.5s ease,
+    transform 0.5s ease !important;
 }
 .card-link:hover {
-  color: #FFE4ED !important;
+  color: #ffe4ed !important;
   background-color: transparent;
   transform: scale(1.1, 1.1);
-  box-shadow: 3px 3px 3px #8AF927;
+  box-shadow: 3px 3px 3px #8af927;
 }
 .card-link .svcard-img {
   width: 48px;
   height: auto;
-  color: #FFE4ED;
+  color: #ffe4ed;
   margin-right: 6px;
 }
 
@@ -874,8 +905,12 @@ body {
   height: 154px;
   object-fit: cover;
   object-position: top;
-  box-shadow: 3px 3px 0 #8AF927, -3px -3px 0 #5c9f24;
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  box-shadow:
+    3px 3px 0 #8af927,
+    -3px -3px 0 #5c9f24;
+  transition:
+    transform 0.5s ease,
+    box-shadow 0.5s ease;
   /*border: 4px double #FEACC6;*/
   border-radius: 25px;
 }
@@ -899,7 +934,7 @@ body {
   text-align: start;
 }
 .bz-card .bz-card-body p {
-  color: #FFE4ED;
+  color: #ffe4ed;
   font-size: 16px;
   margin-bottom: 10px;
 }
@@ -935,7 +970,8 @@ body {
     display: flex;
   }
   /*articulo ppal*/
-  .h2-main, .valores-div .cards-section-title .cst-name {
+  .h2-main,
+  .valores-div .cards-section-title .cst-name {
     width: 100%;
   }
   .main-text1 {
@@ -945,7 +981,7 @@ body {
     width: 100%;
   }
   .main-grid-div {
-    grid-column: 1/span 2;
+    grid-column: 1 / span 2;
     grid-row: 1;
     justify-content: start !important;
   }
@@ -1061,7 +1097,8 @@ body {
     display: flex;
   }
   /*articulo ppal*/
-  .h2-main, .valores-div .cards-section-title .cst-name {
+  .h2-main,
+  .valores-div .cards-section-title .cst-name {
     width: 100%;
   }
   .main-text1 {
@@ -1071,7 +1108,7 @@ body {
     width: 100%;
   }
   .main-grid-div {
-    grid-column: 1/span 2;
+    grid-column: 1 / span 2;
     grid-row: 1;
     justify-content: start !important;
   }

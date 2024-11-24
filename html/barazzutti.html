@@ -1,171 +1,249 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Servicios</title>
 
     <!--Link con style.css-->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css" />
 
     <!--Link al icono de la pestana-->
-    <link rel="shortcut icon" href="../assets/icon.ico" type="image/ico">
+    <link rel="shortcut icon" href="../assets/icon.ico" type="image/ico" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 
     <!--Metadatos-->
-    <meta name="description" content="Conocé más sobre quién soy y qué hago">
+    <meta name="description" content="Conocé más sobre quién soy y qué hago" />
 
-    <meta name="keywords" content="Desarrollo, diseño, desarrollo web, diseño web, web, sitio, portafolios, cv">
+    <meta
+      name="keywords"
+      content="Desarrollo, diseño, desarrollo web, diseño web, web, sitio, portafolios, cv"
+    />
 
-    <meta name="author" content="Pablo Barazzutti">
+    <meta name="author" content="Pablo Barazzutti" />
 
-    <meta name="geo.placename" content="Bahia Blanca, Argentina">
-</head>
+    <meta name="geo.placename" content="Bahia Blanca, Argentina" />
+  </head>
 
-<body style="background-color: #323232;">
+  <body style="background-color: #323232">
     <header class="header-format">
-        <div class="header-izq">
-            <img src="../assets/Bz-logo.png" alt="logo bz" class="logo-img-format">
-            <h1 class="h1-text">Bz <span class="highlight">Diseño Web</span></h1>
+      <div class="header-izq">
+        <img
+          src="../assets/Bz-logo.png"
+          alt="logo bz"
+          class="logo-img-format"
+        />
+        <h1 class="h1-text">Bz <span class="highlight">Diseño Web</span></h1>
+      </div>
+      <div class="dropdown drop-mq">
+        <button
+          class="btn btn-secondary dropdown-toggle btn-drop"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Menu
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="../index.html">Inicio</a></li>
+          <li><a class="dropdown-item" href="servicios.html">Servicios</a></li>
+          <li>
+            <a class="dropdown-item" href="barazzutti.html">Barazzutti</a>
+          </li>
+          <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+          <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <nav class="nav-visual">
+        <div class="header-der">
+          <ul class="lista-nav">
+            <li class="nav-item"><a href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a href="servicios.html">Servicios</a></li>
+            <li class="nav-item"><a href="barazzutti.html">Barazzutti</a></li>
+            <li class="nav-item"><a href="faq.html">FAQ</a></li>
+            <li class="nav-item"><a href="contacto.html">Contacto</a></li>
+          </ul>
         </div>
-        <div class="dropdown drop-mq">
-            <button class="btn btn-secondary dropdown-toggle btn-drop" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Menu
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../index.html">Inicio</a></li>
-                <li><a class="dropdown-item" href="servicios.html">Servicios</a></li>
-                <li><a class="dropdown-item" href="barazzutti.html">Barazzutti</a></li>
-                <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
-                <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
-            </ul>
-        </div>
-        <nav class="nav-visual">
-            <div class="header-der">
-                <ul class="lista-nav">
-                    <li class="nav-item"><a href="../index.html">Inicio</a></li>
-                    <li class="nav-item"><a href="servicios.html">Servicios</a></li>
-                    <li class="nav-item"><a href="barazzutti.html">Barazzutti</a></li>
-                    <li class="nav-item"><a href="faq.html">FAQ</a></li>
-                    <li class="nav-item"><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-        </nav>
+      </nav>
     </header>
     <main class="bz">
-        <h2 class="h2-main">Acerca de mi</h2>
-        <section class="grid-cont-bz">
-            <!---->
-            <div class="grid1-1">
-                <div class="bz-card" style="width: 18rem;">
-                    <a href="https://drive.google.com/file/d/1WtBz4bhdXMsiuHw5nqjkd-3GT5xyyiJc/view?usp=drive_link"
-                        target="_blank">
-                        <img src="../assets/cv-img.jpg" class="bz-card-img" alt="cv">
-                    </a>
-                    <div class="bz-card-body">
-                        <h3 class="title-h4">CV - Barazzutti</h3>
-                        <p class="just-text">Acá vas a poder conocer un poco más sobre mi experiencia y formación</p>
-                        <a href="https://drive.google.com/file/d/1WtBz4bhdXMsiuHw5nqjkd-3GT5xyyiJc/view?usp=drive_link"
-                            target="_blank" class="btn btn-primary card-link" style="font-family: 'MergeOne';">Descargar
-                            CV</a>
-                    </div>
-                </div>
+      <h2 class="h2-main">Acerca de mi</h2>
+      <section class="grid-cont-bz">
+        <!---->
+        <div class="grid1-1">
+          <div class="bz-card" style="width: 18rem">
+            <a
+              href="https://drive.google.com/file/d/1WtBz4bhdXMsiuHw5nqjkd-3GT5xyyiJc/view?usp=drive_link"
+              target="_blank"
+            >
+              <img src="../assets/cv-img.jpg" class="bz-card-img" alt="cv" />
+            </a>
+            <div class="bz-card-body">
+              <h3 class="title-h4">CV - Barazzutti</h3>
+              <p class="just-text">
+                Acá vas a poder conocer un poco más sobre mi experiencia y
+                formación
+              </p>
+              <a
+                href="https://drive.google.com/file/d/1WtBz4bhdXMsiuHw5nqjkd-3GT5xyyiJc/view?usp=drive_link"
+                target="_blank"
+                class="btn btn-primary card-link"
+                style="font-family: &quot;MergeOne&quot;"
+                >Descargar CV</a
+              >
             </div>
-            <!---->
-            <div class="bz-layout grid1-2">
-                <div class="bz-info">
-                    <h4 class="title-h4">Quién soy</h4>
-                    <p class="just-text" style="width: 90%; box-shadow: 4px 4px 12px #000000;">Me crie en la ciudad de
-                        Puerto Madryn, comencé estudiando ingeniería en
-                        sistemas y
-                        oceanografía, pero luego decidí que lo que de verdad me apasionaba era el diseño web, por lo que
-                        tomé la decisión de cambiar el rumbo de mi vida y comenzar a aprender las habilidades necesarias
-                        para desarrollar sitios web funcionales, modernos y con mi impronta creativa. <br>También soy
-                        acróbata, y disfruto mucho aprovechar mis momentos de desconexión haciendo deporte y entrenando.
-                    </p>
-                </div>
-                <div class="bz-img-cont">
-                    <img src="../assets/imgyo.png" alt="yo" class="bz-img">
-                    <img src="../assets/Bz-logo.png" alt="bz logo" class="bz-img2">
-                </div>
-            </div>
-            <div class="grid2-1">
-                <h4 class="title-h4">Certificaciones</h4>
-                <a href="carousel.html"><iframe src="carousel.html" class="certif" frameborder="0"></iframe></a>
-            </div>
-            <div class="grid2-2">
-                <h4 class="title-h4">Mis sitios web</h4>
-                <a href="https://barazzuttip.github.io/portafolios-barazzutti/"><button class="card-link">Accedé a mi
-                        portafolios</button></a>
-                <div class="portaf">
-                    <div class="bz-card" style="width: 18rem;">
-                        <a href="https://dev-hachetienda.pantheonsite.io/" target="_blank"><img
-                                src="../assets/hache-img.png" class="bz-card-img" alt="hache"></a>
+          </div>
+        </div>
+        <!---->
+        <div class="bz-layout grid1-2">
+          <div class="bz-info">
+            <h4 class="title-h4">Quién soy</h4>
+            <p
+              class="just-text"
+              style="width: 90%; box-shadow: 4px 4px 12px #000000"
+            >
+              Me crie en la ciudad de Puerto Madryn, comencé estudiando
+              ingeniería en sistemas y oceanografía, pero luego decidí que lo
+              que de verdad me apasionaba era el diseño web, por lo que tomé la
+              decisión de cambiar el rumbo de mi vida y comenzar a aprender las
+              habilidades necesarias para desarrollar sitios web funcionales,
+              modernos y con mi impronta creativa. <br />También soy acróbata, y
+              disfruto mucho aprovechar mis momentos de desconexión haciendo
+              deporte y entrenando.
+            </p>
+          </div>
+          <div class="bz-img-cont">
+            <img src="../assets/imgyo.png" alt="yo" class="bz-img" />
+            <img src="../assets/Bz-logo.png" alt="bz logo" class="bz-img2" />
+          </div>
+        </div>
+        <div class="grid2-1">
+          <h4 class="title-h4">Certificaciones</h4>
+          <a href="carousel.html"
+            ><iframe src="carousel.html" class="certif" frameborder="0"></iframe
+          ></a>
+        </div>
+        <div class="grid2-2">
+          <h4 class="title-h4">Mis sitios web</h4>
+          <a href="https://barazzuttip.github.io/portafolios-barazzutti/"
+            ><button class="card-link">Accedé a mi portafolios</button></a
+          >
+          <div class="portaf">
+            <div class="bz-card" style="width: 18rem">
+              <a href="https://dev-hachetienda.pantheonsite.io/" target="_blank"
+                ><img
+                  src="../assets/hache-img.png"
+                  class="bz-card-img"
+                  alt="hache"
+              /></a>
 
-                        <div class="bz-card-body">
-                            <h3 class="h1-text">Hache Tienda</h3>
-                            <p class="just-text">Maqueta funcional desarrollada en Wordpress, de tienda web de Hache, un
-                                comercio de Bahía Blanca, Buenos Aires.</p>
-                            <a href="https://dev-hachetienda.pantheonsite.io/" target="_blank"
-                                class="btn btn-primary card-link">Visitar sitio</a>
-                        </div>
-                    </div>
-
-                    <div class="bz-card" style="width: 18rem;">
-                        <a href="http://artesbahienses.infinityfreeapp.com/" target="_blank"><img
-                                src="../assets/AB-img.png" class=" bz-card-img" alt="hache"></a>
-                        <div class=" bz-card-body">
-                            <h3 class=" h1-text">Artes Bahienses</h3>
-                            <p class="just-text">Sitio web desarrollado en HTML y CSS como proyecto para mi primer curso
-                                de
-                                Desarrollo Web</p>
-                            <a href="http://artesbahienses.infinityfreeapp.com/" target="_blank"
-                                class="btn btn-primary card-link">Visitar sitio</a>
-                        </div>
-                    </div>
-                </div>
-
+              <div class="bz-card-body">
+                <h3 class="h1-text">Hache Tienda</h3>
+                <p class="just-text">
+                  Maqueta funcional desarrollada en Wordpress, de tienda web de
+                  Hache, un comercio de Bahía Blanca, Buenos Aires.
+                </p>
+                <a
+                  href="https://dev-hachetienda.pantheonsite.io/"
+                  target="_blank"
+                  class="btn btn-primary card-link"
+                  >Visitar sitio</a
+                >
+              </div>
             </div>
-        </section>
+
+            <div class="bz-card" style="width: 18rem">
+              <a
+                href="http://artesbahienses.infinityfreeapp.com/"
+                target="_blank"
+                ><img
+                  src="../assets/AB-img.png"
+                  class="bz-card-img"
+                  alt="hache"
+              /></a>
+              <div class="bz-card-body">
+                <h3 class="h1-text">Artes Bahienses</h3>
+                <p class="just-text">
+                  Sitio web desarrollado en HTML y CSS como proyecto para mi
+                  primer curso de Desarrollo Web
+                </p>
+                <a
+                  href="http://artesbahienses.infinityfreeapp.com/"
+                  target="_blank"
+                  class="btn btn-primary card-link"
+                  >Visitar sitio</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 
-</body>
-
-<footer>
+  <footer>
     <div class="footer-format">
-        <div class="footer-izq">
-            <form action="index.html">
-                <div class="form-data">
-                    <label for="name">Nombre</label>
-                    <input type="text" name="nombre" placeholder="...">
-                    <label for="email">Email</label>
-                    <input type="text" name="email" placeholder="...">
-                </div>
-                <div class="form-input">
-                    <label for="text">Dejame tu opinión</label>
-                    <input type="text" name="text" placeholder="..." class="txt-input">
-                    <input type="submit" value="Enviar" class="btn-input">
-                </div>
-            </form>
-        </div>
-        <img src="../assets/Bz-logo.png" alt="logo footer" class="footer-logo">
-        <div class="footer-der">
-            <h5>Contacto</h5>
-            <ul>
-                <li><img src="../assets/wappsocial.png" class="img-footer" alt="phone"> +5492804637812</li>
-                <li><img class="img-footer" src="../assets/instagram.png" alt="insta"><a
-                        href="https://www.instagram.com/si.vuela.es.pablit?hl=es">Pablo Barazzutti</a></li>
-                <li><img src="../assets/gmail.png" class="img-footer" alt="mail">barazzuttip@gmail.com</li>
-            </ul>
-        </div>
+      <div class="footer-izq">
+        <form action="index.html">
+          <div class="form-data">
+            <label for="name">Nombre</label>
+            <input type="text" name="nombre" placeholder="..." />
+            <label for="email">Email</label>
+            <input type="text" name="email" placeholder="..." />
+          </div>
+          <div class="form-input">
+            <label for="text">Dejame tu opinión</label>
+            <input
+              type="text"
+              name="text"
+              placeholder="..."
+              class="txt-input"
+            />
+            <input type="submit" value="Enviar" class="btn-input" />
+          </div>
+        </form>
+      </div>
+      <img src="../assets/Bz-logo.png" alt="logo footer" class="footer-logo" />
+      <div class="footer-der">
+        <h5>Contacto</h5>
+        <ul>
+          <li>
+            <img
+              src="../assets/wappsocial.png"
+              class="img-footer"
+              alt="phone"
+            />
+            +5492804637812
+          </li>
+          <li>
+            <img
+              class="img-footer"
+              src="../assets/instagram.png"
+              alt="insta"
+            /><a href="https://www.instagram.com/si.vuela.es.pablit?hl=es"
+              >Pablo Barazzutti</a
+            >
+          </li>
+          <li>
+            <img
+              src="../assets/gmail.png"
+              class="img-footer"
+              alt="mail"
+            />barazzuttip@gmail.com
+          </li>
+        </ul>
+      </div>
     </div>
-</footer>
-
+  </footer>
 </html>

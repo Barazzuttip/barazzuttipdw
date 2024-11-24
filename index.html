@@ -1,139 +1,228 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Bz - Diseño Web</title>
 
     <!--Link con style.css-->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <!--Link al icono de la pestana-->
-    <link rel="shortcut icon" href="assets/icon.ico" type="image/ico">
+    <link rel="shortcut icon" href="assets/icon.ico" type="image/ico" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 
     <!--Metadatos-->
-    <meta name="description" content="Desarrollo web front-end. Obtené tu sitio web personalizado rápido y seguro">
- 
-    <meta name="keywords" content="Desarrollo, diseño, desarrollo web, diseño web, web, sitio, pagina">
-    
-    <meta name="author" content="Pablo Barazzutti">
+    <meta
+      name="description"
+      content="Desarrollo web front-end. Obtené tu sitio web personalizado rápido y seguro"
+    />
 
-    <meta name="geo.placename" content="Bahia Blanca, Argentina">
+    <meta
+      name="keywords"
+      content="Desarrollo, diseño, desarrollo web, diseño web, web, sitio, pagina"
+    />
 
-</head>
+    <meta name="author" content="Pablo Barazzutti" />
 
-<body style="background-color:#323232;">
+    <meta name="geo.placename" content="Bahia Blanca, Argentina" />
+  </head>
+
+  <body style="background-color: #323232">
     <header class="header-format">
-        <div class="header-izq">
-            <img src="assets/Bz-logo.png" alt="logo bz" class="logo-img-format">
-            <h1 class="h1-text">Bz <span class="highlight">Diseño Web</span></h1>
+      <div class="header-izq">
+        <img src="assets/Bz-logo.png" alt="logo bz" class="logo-img-format" />
+        <h1 class="h1-text">Bz <span class="highlight">Diseño Web</span></h1>
+      </div>
+      <div class="dropdown drop-mq">
+        <button
+          class="btn btn-secondary dropdown-toggle btn-drop"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Menu
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="index.html">Inicio</a></li>
+          <li>
+            <a class="dropdown-item" href="html/servicios.html">Servicios</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="html/barazzutti.html">Barazzutti</a>
+          </li>
+          <li><a class="dropdown-item" href="html/faq.html">FAQ</a></li>
+          <li>
+            <a class="dropdown-item" href="html/contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+      <nav class="nav-visual">
+        <div class="header-der">
+          <ul class="lista-nav">
+            <li class="nav-item"><a href="index.html">Inicio</a></li>
+            <li class="nav-item">
+              <a href="html/servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a href="html/barazzutti.html">Barazzutti</a>
+            </li>
+            <li class="nav-item"><a href="html/faq.html">FAQ</a></li>
+            <li class="nav-item"><a href="html/contacto.html">Contacto</a></li>
+          </ul>
         </div>
-        <div class="dropdown drop-mq">
-            <button class="btn btn-secondary dropdown-toggle btn-drop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Menu
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="index.html">Inicio</a></li>
-              <li><a class="dropdown-item" href="html/servicios.html">Servicios</a></li>
-              <li><a class="dropdown-item" href="html/barazzutti.html">Barazzutti</a></li>
-              <li><a class="dropdown-item" href="html/faq.html">FAQ</a></li>
-              <li><a class="dropdown-item" href="html/contacto.html">Contacto</a></li>
-            </ul>
-        </div>
-        <nav class="nav-visual">
-            <div class="header-der">
-                <ul class="lista-nav">
-                    <li class="nav-item"><a href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a href="html/servicios.html">Servicios</a></li>
-                    <li class="nav-item"><a href="html/barazzutti.html">Barazzutti</a></li>
-                    <li class="nav-item"><a href="html/faq.html">FAQ</a></li>
-                    <li class="nav-item"><a href="html/contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-        </nav>
+      </nav>
     </header>
 
-    <main style="background-color:rgba($color: #323232, $alpha: 1); display:flex; flex-direction:column; align-items:center; border-radius:24px;">
-        <section class="flyer" style="display: none;"><img src="assets/Desktop2.png" alt=""></section>
-        <section class="main-grid main-grid-bg">
-            <div class="main-grid-div">
-                <h2 class="h2-main">Transformá tus ideas en sitios web profesionales</h2>
-                <p class="main-text1">¿Necesitás un sitio web que destaque? Con mi experiencia en desarrollo web
-                    utilizando WordPress, HTML, CSS y JavaScript, te ofrezco soluciones personalizadas y modernas. Desde
-                    la identidad visual hasta la funcionalidad, cada detalle de tu proyecto estará diseñado para captar
-                    la atención de tu público y convertir visitantes en clientes.</p>
-                <p class="main-text2">Elegí un desarrollador que entienda lo que tu marca necesita para destacar.
-                    ¡Hagamos el sitio que te merecés!</p>
-                <a class="card-link" href="https://wa.me/+5492804637812" target="_blank">
-                    Charlemos!
-                </a>
+    <main
+      style="
+        background-color: rgba($color: #323232, $alpha: 1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 24px;
+      "
+    >
+      <section class="flyer" style="display: none">
+        <img src="assets/Desktop2.png" alt="" />
+      </section>
+      <section class="main-grid main-grid-bg">
+        <div class="main-grid-div">
+          <h2 class="h2-main">
+            Transformá tus ideas en sitios web profesionales
+          </h2>
+          <p class="main-text1">
+            ¿Necesitás un sitio web que destaque? Con mi experiencia en
+            desarrollo web utilizando WordPress, HTML, CSS y JavaScript, te
+            ofrezco soluciones personalizadas y modernas. Desde la identidad
+            visual hasta la funcionalidad, cada detalle de tu proyecto estará
+            diseñado para captar la atención de tu público y convertir
+            visitantes en clientes.
+          </p>
+          <p class="main-text2">
+            Elegí un desarrollador que entienda lo que tu marca necesita para
+            destacar. ¡Hagamos el sitio que te merecés!
+          </p>
+          <a
+            class="card-link"
+            href="https://wa.me/+5492804637812"
+            target="_blank"
+          >
+            Charlemos!
+          </a>
+        </div>
+      </section>
+      <section class="valores-div">
+        <div class="cards-section-title">
+          <h3 class="cst-name">Valores guía</h3>
+        </div>
+        <div class="valores-style">
+          <div class="card cards-style" style="width: 18rem">
+            <img
+              src="assets/actualizar.png"
+              class="card-img-top img-card"
+              alt="..."
+            />
+            <div class="card-body card-body-style">
+              <h4 class="card-title">Modernidad</h4>
+              <p class="card-text card-txt">
+                Mi constante actualización en las nuevas modas y herramientas
+                disponibles me permiten crear sitios actuales, modernos, que
+                atraigan al público objetivo y le brinden una linda experiencia.
+              </p>
             </div>
-        </section>
-        <section class="valores-div">
-            <div class="cards-section-title">
-                <h3 class="cst-name">Valores guía</h3>
+          </div>
+          <div class="card cards-style" style="width: 18rem">
+            <img src="assets/ui.png" class="card-img-top img-card" alt="..." />
+            <div class="card-body card-body-style">
+              <h4 class="card-title">Estética</h4>
+              <p class="card-text card-txt">
+                Me baso en las prácticas del diseño UX/UI para desarrollar
+                sitios prácticos y atractivos, contemplando las corrientes
+                estéticas predominantes en el mundo del diseño.
+              </p>
             </div>
-            <div class="valores-style">
-                <div class="card cards-style" style="width: 18rem;">
-                    <img src="assets/actualizar.png" class="card-img-top img-card" alt="...">
-                    <div class="card-body card-body-style">
-                        <h4 class="card-title">Modernidad</h4>
-                        <p class="card-text card-txt">Mi constante actualización en las nuevas modas y herramientas disponibles me permiten crear sitios actuales, modernos, que atraigan al público objetivo y le brinden una linda experiencia.</p>
-                    </div>
-                </div>
-                <div class="card cards-style" style="width: 18rem;">
-                    <img src="assets/ui.png" class="card-img-top img-card" alt="...">
-                    <div class="card-body card-body-style">
-                        <h4 class="card-title">Estética</h4>
-                        <p class="card-text card-txt">Me baso en las prácticas del diseño UX/UI para desarrollar sitios prácticos y atractivos, contemplando las corrientes estéticas predominantes en el mundo del diseño.</p>
-                    </div>
-                </div>
-                <div class="card cards-style" style="width: 18rem;">
-                    <img src="assets/abrazo.png" class="card-img-top img-card" alt="..." >
-                    <div class="card-body card-body-style">
-                        <h4 class="card-title">Contacto humano</h4>
-                        <p class="card-text card-txt">En tiempos de tanta modernidad, creo que es importante recordar que somos humanos con ideas y sentimientos, por lo que mis páginas web siempre buscan representar a mis clientes emocionalmente.</p>
-                    </div>
-                </div>
+          </div>
+          <div class="card cards-style" style="width: 18rem">
+            <img
+              src="assets/abrazo.png"
+              class="card-img-top img-card"
+              alt="..."
+            />
+            <div class="card-body card-body-style">
+              <h4 class="card-title">Contacto humano</h4>
+              <p class="card-text card-txt">
+                En tiempos de tanta modernidad, creo que es importante recordar
+                que somos humanos con ideas y sentimientos, por lo que mis
+                páginas web siempre buscan representar a mis clientes
+                emocionalmente.
+              </p>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
 
     <footer>
-        <div class="footer-format">
-            <div class="footer-izq">
-                <form action="index.html">
-                    <div class="form-data">
-                        <label for="name">Nombre</label>
-                        <input type="text" name="nombre" placeholder="...">
-                        <label for="email">Email</label>
-                        <input type="text" name="email" placeholder="...">
-                    </div>
-                    <div class="form-input">
-                        <label for="text">Dejame tu opinión</label>
-                        <input type="text" name="text" placeholder="..." class="txt-input">
-                        <input type="submit" value="Enviar" class="btn-input">
-                    </div>
-                </form>
+      <div class="footer-format">
+        <div class="footer-izq">
+          <form action="index.html">
+            <div class="form-data">
+              <label for="name">Nombre</label>
+              <input type="text" name="nombre" placeholder="..." />
+              <label for="email">Email</label>
+              <input type="text" name="email" placeholder="..." />
             </div>
-            <img src="assets/Bz-logo.png" alt="logo footer" class="footer-logo">
-            <div class="footer-der">
-                <h5>Contacto</h5>
-                <ul>
-                    <li><img class="img-footer" src="assets/wappsocial.png" alt="phone"> +5492804637812</li>
-                    <li><img class="img-footer" src="assets/instagram.png" alt="insta"><a
-                            href="https://www.instagram.com/si.vuela.es.pablit?hl=es">Pablo Barazzutti</a></li>
-                    <li><img class="img-footer" src="assets/gmail.png" alt="mail">barazzuttip@gmail.com</li>
-                </ul>
+            <div class="form-input">
+              <label for="text">Dejame tu opinión</label>
+              <input
+                type="text"
+                name="text"
+                placeholder="..."
+                class="txt-input"
+              />
+              <input type="submit" value="Enviar" class="btn-input" />
             </div>
+          </form>
         </div>
+        <img src="assets/Bz-logo.png" alt="logo footer" class="footer-logo" />
+        <div class="footer-der">
+          <h5>Contacto</h5>
+          <ul>
+            <li>
+              <img class="img-footer" src="assets/wappsocial.png" alt="phone" />
+              +5492804637812
+            </li>
+            <li>
+              <img
+                class="img-footer"
+                src="assets/instagram.png"
+                alt="insta"
+              /><a href="https://www.instagram.com/si.vuela.es.pablit?hl=es"
+                >Pablo Barazzutti</a
+              >
+            </li>
+            <li>
+              <img
+                class="img-footer"
+                src="assets/gmail.png"
+                alt="mail"
+              />barazzuttip@gmail.com
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
-
-
-</body>
-
+  </body>
 </html>

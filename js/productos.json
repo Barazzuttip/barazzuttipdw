@@ -1,0 +1,23 @@
+[
+  {
+    "Nombre": "Landing Page",
+    "id": 1,
+    "Paginas": 1,
+    "Mantenimiento": true,
+    "Precio": 140
+  },
+  {
+    "Nombre": "Sitio Web Institucional",
+    "id": 2,
+    "Paginas": 5,
+    "Mantenimiento": true,
+    "Precio": 200
+  },
+  {
+    "Nombre": "E-commerce",
+    "id": 3,
+    "Paginas": 9,
+    "Mantenimiento": true,
+    "Precio": 400
+  }
+]

@@ -1,117 +1,168 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Servicios</title>
 
     <!--Link con style.css-->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css" />
 
     <!--Link al icono de la pestana-->
-    <link rel="shortcut icon" href="../assets/icon.ico" type="image/ico">
+    <link rel="shortcut icon" href="../assets/icon.ico" type="image/ico" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <!--Metadatos-->
-    <meta name="description" content="Contratá mis servicios según tus requerimientos">
+    <meta
+      name="description"
+      content="Contratá mis servicios según tus requerimientos"
+    />
 
-    <meta name="keywords" content="Desarrollo, diseño, desarrollo web, diseño web, web, sitio, pagina, servicios">
+    <meta
+      name="keywords"
+      content="Desarrollo, diseño, desarrollo web, diseño web, web, sitio, pagina, servicios"
+    />
 
-    <meta name="author" content="Pablo Barazzutti">
+    <meta name="author" content="Pablo Barazzutti" />
 
-    <meta name="geo.placename" content="Bahia Blanca, Argentina">
-</head>
+    <meta name="geo.placename" content="Bahia Blanca, Argentina" />
 
-<body style="background-color: #323232">
+    <!-- sweet alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+
+  <body style="background-color: #323232">
     <header class="header-format">
-        <div class="header-izq">
-            <img src="../assets/Bz-logo.png" alt="logo bz" class="logo-img-format">
-            <h1 class="h1-text">Bz <span class="highlight">Diseño Web</span></h1>
+      <div class="header-izq">
+        <img
+          src="../assets/Bz-logo.png"
+          alt="logo bz"
+          class="logo-img-format"
+        />
+        <h1 class="h1-text">Bz <span class="highlight">Diseño Web</span></h1>
+      </div>
+      <div class="dropdown drop-mq">
+        <button
+          class="btn btn-secondary dropdown-toggle btn-drop"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Menu
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="../index.html">Inicio</a></li>
+          <li><a class="dropdown-item" href="servicios.html">Servicios</a></li>
+          <li>
+            <a class="dropdown-item" href="barazzutti.html">Barazzutti</a>
+          </li>
+          <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+          <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <nav class="nav-visual">
+        <div class="header-der">
+          <ul class="lista-nav">
+            <li class="nav-item"><a href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a href="servicios.html">Servicios</a></li>
+            <li class="nav-item"><a href="barazzutti.html">Barazzutti</a></li>
+            <li class="nav-item"><a href="faq.html">FAQ</a></li>
+            <li class="nav-item"><a href="contacto.html">Contacto</a></li>
+          </ul>
         </div>
-        <div class="dropdown drop-mq">
-            <button class="btn btn-secondary dropdown-toggle btn-drop" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Menu
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../index.html">Inicio</a></li>
-                <li><a class="dropdown-item" href="servicios.html">Servicios</a></li>
-                <li><a class="dropdown-item" href="barazzutti.html">Barazzutti</a></li>
-                <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
-                <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
-            </ul>
-        </div>
-        <nav class="nav-visual">
-            <div class="header-der">
-                <ul class="lista-nav">
-                    <li class="nav-item"><a href="../index.html">Inicio</a></li>
-                    <li class="nav-item"><a href="servicios.html">Servicios</a></li>
-                    <li class="nav-item"><a href="barazzutti.html">Barazzutti</a></li>
-                    <li class="nav-item"><a href="faq.html">FAQ</a></li>
-                    <li class="nav-item"><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-        </nav>
+      </nav>
     </header>
     <section class="svc-div">
-        <div class="consultas-div">
-            <h2 class="h2-main"> Consultas </h2>
-            <div class="buttons">
-                <button id="btn-lp" class="btn-svc">Landing Page</button>
-                <button id="btn-swi" class="btn-svc ">Sitio Web Institucional</button>
-                <button id="btn-ecomm" class="btn-svc">E-commerce</button>
-                <button id="btn-pers" class="btn-svc">Sitio Web Personalizado</button>
-                <button id="btn-verCarr" class="btn-svc">Ver carrito</button>
-                <button id="btn-cuotas" class="btn-svc">Cuotas</button>
-                <button id="btn-info" class="btn-svc btn-last">&nbsp; Informacion sobre los sitios &nbsp;</button>
-            </div>
+      <div class="consultas-div">
+        <h2 class="h2-main">Consultas</h2>
+        <div class="buttons">
+          <button id="btn-lp" class="btn-svc">Landing Page</button>
+          <button id="btn-swi" class="btn-svc">Sitio Web Institucional</button>
+          <button id="btn-ecomm" class="btn-svc">E-commerce</button>
+          <!-- <button id="btn-pers" class="btn-svc">Sitio Web Personalizado</button> -->
+          <button id="btn-verCarr" class="btn-svc">Ver carrito</button>
+          <button id="btn-cuotas" class="btn-svc">Cuotas</button>
+          <button id="btn-info" class="btn-svc btn-last">
+            &nbsp; Informacion sobre los sitios &nbsp;
+          </button>
         </div>
-        <div class="display-div" id="svc-display-div">
-            
-        </div>
+      </div>
+      <div class="display-div" id="svc-display-div"></div>
 
-        <script src="../js/miarchivo.js"></script>
+      <!-- <script src="../js/miarchivo.js"></script> -->
+      <script src="../js/miarchivo.js"></script>
     </section>
-   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
 
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 
-<footer>
+  <footer>
     <div class="footer-format">
-        <div class="footer-izq">
-            <form action="index.html">
-                <div class="form-data">
-                    <label for="name">Nombre</label>
-                    <input type="text" name="nombre" placeholder="...">
-                    <label for="email">Email</label>
-                    <input type="text" name="email" placeholder="...">
-                </div>
-                <div class="form-input">
-                    <label for="text">Dejame tu opinión</label>
-                    <input type="text" name="text" placeholder="..." class="txt-input">
-                    <input type="submit" value="Enviar" class="btn-input">
-                </div>
-            </form>
-        </div>
-        <img src="../assets/Bz-logo.png" alt="logo footer" class="footer-logo">
-        <div class="footer-der">
-            <h5>Contacto</h5>
-            <ul>
-                <li><img src="../assets/wappsocial.png" class="img-footer" alt="phone"> +5492804637812</li>
-                <li><img class="img-footer" src="../assets/instagram.png" alt="insta"><a
-                        href="https://www.instagram.com/si.vuela.es.pablit?hl=es">Pablo Barazzutti</a></li>
-                <li><img src="../assets/gmail.png" class="img-footer" alt="mail">barazzuttip@gmail.com</li>
-            </ul>
-        </div>
+      <div class="footer-izq">
+        <form action="index.html">
+          <div class="form-data">
+            <label for="name">Nombre</label>
+            <input type="text" name="nombre" placeholder="..." />
+            <label for="email">Email</label>
+            <input type="text" name="email" placeholder="..." />
+          </div>
+          <div class="form-input">
+            <label for="text">Dejame tu opinión</label>
+            <input
+              type="text"
+              name="text"
+              placeholder="..."
+              class="txt-input"
+            />
+            <input type="submit" value="Enviar" class="btn-input" />
+          </div>
+        </form>
+      </div>
+      <img src="../assets/Bz-logo.png" alt="logo footer" class="footer-logo" />
+      <div class="footer-der">
+        <h5>Contacto</h5>
+        <ul>
+          <li>
+            <img
+              src="../assets/wappsocial.png"
+              class="img-footer"
+              alt="phone"
+            />
+            +5492804637812
+          </li>
+          <li>
+            <img
+              class="img-footer"
+              src="../assets/instagram.png"
+              alt="insta"
+            /><a href="https://www.instagram.com/si.vuela.es.pablit?hl=es"
+              >Pablo Barazzutti</a
+            >
+          </li>
+          <li>
+            <img
+              src="../assets/gmail.png"
+              class="img-footer"
+              alt="mail"
+            />barazzuttip@gmail.com
+          </li>
+        </ul>
+      </div>
     </div>
-</footer>
-
+  </footer>
 </html>

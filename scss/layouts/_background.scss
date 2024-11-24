@@ -1,16 +1,17 @@
-html, body {
-    background-image: url('../assets/bg-gif4.gif');
-    background-position: top    left;
-    background-repeat: no-repeat;
-    background-size: cover;
+html,
+body {
+  background-image: url("../assets/bg-gif4.gif");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .main-grid-bg {
-    margin-top: 54px;
-    width: 75%;
-    border-radius: 24px;
-    height: 300px;
-    background-color: rgba($color: #323232, $alpha: 0.5);
-    /*background-image: url('https://raw.githubusercontent.com/Barazzuttip/barazzuttipdw/main/assets/main-img.png');
+  margin-top: 54px;
+  width: 75%;
+  border-radius: 24px;
+  height: 300px;
+  background-color: rgba($color: #323232, $alpha: 0.5);
+  /*background-image: url('https://raw.githubusercontent.com/Barazzuttip/barazzuttipdw/main/assets/main-img.png');
     background-position: top right;
     background-size: contain;
     background-repeat: no-repeat;*/
