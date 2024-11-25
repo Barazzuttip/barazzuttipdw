@@ -309,6 +309,15 @@ const valorCuotas = (total, cant) => {
     return cuota;
 }
 
+const cuotaAlert = (totalCuota) => {
+
+    Swal.fire({
+        // title: '¡Éxito!',
+        text:`Cada cuota sera de: ` + totalCuota + `USD`,
+        icon: 'info'
+    });
+}
+
 const calcularCuotas = () => {
     divSvc.innerHTML = "";
 
@@ -401,7 +410,7 @@ const calcularCuotas = () => {
         const serv = JSON.parse(localStorage.getItem("servicios"));
         const total = serv[aux2].Precio;
         const totalCuota = valorCuotas(total, cant);
-        alert(`Cada cuota sera de: ` + totalCuota + `USD`);
+        cuotaAlert(totalCuota);
     });
 }
 btnCoutas.addEventListener("click", () => calcularCuotas())
